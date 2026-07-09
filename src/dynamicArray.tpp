@@ -91,7 +91,7 @@ DynamicArray<T>::DynamicArray(const DynamicArray<T>& obj)
     this->size = obj.size;
 
     this->ptr = (T*)malloc(capacity * sizeof(T));
-    if (ptr == nullptr) {
+    if (ptr == NULL) {
         throw std::bad_alloc();
     }
 

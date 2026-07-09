@@ -4,15 +4,21 @@ A dynamic array is a linear data structure that stores elements in contiguous me
 
 **method 1** : ```append(T value)``` , it will take input as an integer and add it to the end of the array here we are not returning anything as it is already understood by the user that at which index the new element is added so there is no need to return the index hence we return void.
 
-**method 2** : ```remove(T index)```, here we will provide the index of the element that we want to be removed from our dynamic array, according to me we should also return the element value that is deleted so, I choose integer as the return type.
+**method 2** : ```remove(int index)```, here we will provide the index of the element that we want to be removed from our dynamic array, according to me we should also return the element value that is deleted so, I choose integer as the return type.
 
-**method 3** : ```get(T index)``` it will take an index as the input and return the value associated with that index so the returned value is integer in here for my implementation
+**method 3** : ```get(int index)``` it will take an index as the input and return the value associated with that index so the returned value is integer in here for my implementation
 
-**method 4** : ```size()``` it will not take any parameter and will only return the current size of the dynamic array hence the return type is int 
+**method 4** : ```getSize()``` it will not take any parameter and will only return the current size of the dynamic array hence the return type is int 
 
-**method 5** : ```capacity()``` it will not take any parameter and will only return the current capacity of the dynamic array hence the return type is int
+**method 5** : ```getCapacity()``` it will not take any parameter and will only return the current capacity of the dynamic array hence the return type is int
 
 **method 6** : ```insert(int index, T value)``` it will input the value on the index by shifting elements to next by one and the return type here also is void
+
+**method 7** : ```nextPowerOf2(int n)``` it will take an integer as input and return the next power of 2 that is greater than or equal to the given value. This is used to ensure that the initial capacity and resized capacity always remain powers of two, resulting in efficient memory allocation.
+
+**method 8** : ```growthFactor(int currentCapacity)``` it will take the current capacity as input and calculate the appropriate growth factor based on the memory consumption 
+
+**Method 10** : ```resize()``` it will not take any parameter and will automatically increase the capacity of the dynamic array whenever the current capacity is full. It first calculates the new capacity using the adaptive growth strategy, allocates a new block of memory, copies all existing elements into the new memory using placement new, destroys the old objects, frees the previously allocated memory, and finally updates the internal pointer and capacity to point to the newly allocated storage.
 
  ## Constructors:
 Here I have deciced to make 2 constuctor that are:
@@ -25,13 +31,23 @@ Here I have deciced to make 2 constuctor that are:
 3. __Copy Constructor__:
 ```DynamicArray(const DynamicArray& other)```: This constructor is used to create a new Dynamic Array object as an exact copy of an existing object. Instead of copying only the pointer to the underlying array (shallow copy), it performs a **deep copy** by allocating a new block of memory with the same capacity as the source array and copying each element individually. The new object also copies the current size (`length`) and capacity of the original array, ensuring that both objects maintain independent copies of the data. As a result, any modification made to one array does not affect the other, preventing issues such as shared memory, double deletion, and memory corruption during object destruction.
 
+## Operators Overloaded
+
+Here I have decided to overload 2 operators that are:
+
+1. __Assignment Operator (`=`)__:
+   ```DynamicArray& operator=(const DynamicArray& other)```: This operator is used when an already-existing Dynamic Array object is assigned the contents of another existing object (e.g. `a = b`), as opposed to the copy constructor which handles creation of a brand-new object. It first checks for **self-assignment** (`this == &other`) to avoid unnecessary work or accidental destruction of the array's own data. It then frees the current object's existing memory, allocates a new block of memory with the same capacity as the source array, and copies each element individually to perform a **deep copy**. The current size (`length`) and capacity of the source object are also copied over. This ensures the assigned-to object holds an entirely independent copy of the data, preventing issues such as shared memory, double deletion, and memory corruption during object destruction. The function returns a reference to `*this` so that assignments can be chained (e.g. `a = b = c`).
+
+2. __Subscript Operator (`[]`)__:
+   ```T& operator[](int index)```: This operator allows elements of the Dynamic Array to be accessed and modified using familiar array-style syntax (e.g. `arr[2]`) instead of a named method like `get(index)`. It first validates that the provided `index` lies within the valid range `[0, size)`, throwing an `std::out_of_range` exception if it does not, to prevent silent out-of-bounds access. Because the function returns a reference (`T&`) rather than a copy, it supports both **reading** (`x = arr[2]`) and **writing** (`arr[2] = x`) through the same operator. A `const` overload (`const T& operator[](int index) const`) is also provided so that the subscript operator can be used safely on `const` Dynamic Array objects, restricting access to read-only.
+
 ## Section 2 : Internal Representation
 ![Dynamic Array](../images/WhatsApp%20Image%202026-07-07%20at%209.27.53%20AM.jpeg)
 We have to define the rule of three here in which in destructor we will deallocate the space allocated using free keyword the memory allocated, in copy constructor we will allocate more memory same as the current capacity of previous object and afterward copy all elements in it, hence it is a deep copy that is created. Similarly, for the assignment operator we will perform assigning of memory same as the capacity of the original array.
 
 ## Section 3 : Complexity Estimates
 
-1. ```append(int value)```
+1. ```append(T value)```
 
 **Best Case:** The append operation takes O(1) time when there is enough capacity in the array, as the new element is simply placed at the end. <br>
 **Average Case:** The append operation takes O(1) amortized time because although resizing occasionally occurs, most insertions do not require it.<br>
@@ -44,21 +60,39 @@ __Best Case:__ The remove operation takes O(1) time when the last element is rem
 3.``` get(int index) ```
 
 The get operation takes O(1) time because the element can be accessed directly using its index, hence its average, best and worst case is same that is O(1)<br>
-4. ```size()```
+4. ```getSize()```
 
 The size operation takes O(1) time because it simply returns the stored size variable, hence its average, best and worst case is same that is O(1)<br>
-5. ```capacity()```
+5. ```getCapacity()```
 
 Same as in size() it just return the value of stored variable hence it is same in all cases best, worst and average that is O(1).<br>
-6. ```insert(int index, int value)```
+6. ```insert(int index, T value)```
 
 **Best Case:** The insert operation takes O(1) time when the element is inserted at the end of the array and sufficient capacity is available.<br>
 **Average Case:** The insert operation takes O(n) time because elements usually need to be shifted to make space for the new element.<br>
 **Worst Case:** The insert operation takes O(n) time when the element is inserted at the beginning or when resizing and shifting of all elements are required.
 
+7. ```nextPowerOf2(int n)```
+
+- **Time Complexity:** **O(1)**
+- **Reason:** The function performs a fixed number of bitwise operations (5 shifts and OR operations), irrespective of the input value. Since the number of operations never changes, the complexity remains constant.
+
+8.  ```growthFactor(int currentCapacity)```
+
+- **Time Complexity:** **O(1)**
+- **Reason:** It performs a few arithmetic operations and conditional checks to determine the appropriate growth factor. No loops or recursion are involved.
+
+10. ```resize()```
+
+- **Time Complexity:** **O(n)**
+- **Reason:** Although calculating the new capacity and allocating memory take constant time, the function must copy all existing `n` elements from the old memory block to the new one and destroy the old objects. Since every element is visited once, the overall time complexity is **O(n)**.
+
+- **Auxiliary Space Complexity:** **O(n)**
+- **Reason:** A new memory block capable of storing `n` elements (or more) is allocated temporarily during resizing. Hence, additional space proportional to the number of stored elements is required.
+
 ## Section 4: Design Decisions
 __Initial size of array :__ I have decided to keep the initial size of array as 4 because it is not even small as increasing the size by one in every insertion, I also looked into to set the initial size as 8 but then if someone just inserted only one value it would waste memory so, here initial size is neither too small nor too large so I choosed it as my choice for this implementation.
 <br><br>
+
 __Doubling the size :__
 I choosed to double the size as it gives the best results for smaller inputs and maintains the balance between performance and memory usage but as we the capacity increase and it comes to be in thousands it would cause issue so to resolve it, I have though of to consider space usage as the parameter to know by which factor should we multiply the capacity as the size increase the resizing factor less then usual. Example if space usage is about 1MB then we can go with 2x and as it increase we can choose 1.5x and more accordingly
-
