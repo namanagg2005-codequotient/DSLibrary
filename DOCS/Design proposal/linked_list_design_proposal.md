@@ -4,13 +4,17 @@ A **Doubly Linked List (DLL)** is a linear dynamic data structure in which each 
 
 ## Section 1 : Public Api
 
-  1. ```insertFront(T value)``` : It takes the value as input and insert it to the front of linked list as the user knows the location there is no need toreturn anything i.e. void <br>
-  2. ```deleteFront()``` : it will delete the node from the start and in my implementation I have decided to return the element that is deleted so i will return T as return type <br>
-  3. ```insertIndex(int index , T value)``` : Here the user will enter the index at which they want to insert the value and the return type is also void here too <br>
-  4. ```search(T value)``` : it will return whether the value is present in linked list or not so the return type is bool in here <br>
-  5. ```size()``` : it will return the number of elements present in the linked list so the return type here is integer <br>
-  6. ```printForeward()``` : it will just traverse the array and print the values so the return type is void here 
-  7. ```printBackward()``` : it will just traverse the array and print the values in reverse order similar to ```printForeward()``` so the return type here also is void  
+1. ```insertFront(T value)``` : It takes the value as input and insert it to the front of linked list as the user knows the location there is no need toreturn anything i.e. void <br>
+2. ```deleteFront()``` : it will delete the node from the start and in my implementation I have decided to return the element that is deleted so i will return T as return type <br>
+3. ```insertIndex(int index , T value)``` : Here the user will enter the index at which they want to insert the value and the return type is also void here too <br>
+4. ```search(T value)``` : it will return whether the value is present in linked list or not so the return type is bool in here <br>
+5. ```size()``` : it will return the number of elements present in the linked list so the return type here is integer <br>
+6. ```printForeward()``` : it will just traverse the array and print the values so the return type is void here 
+7. ```printBackward()``` : it will just traverse the array and print the values in reverse order similar to ```printForeward()``` so the return type here also is void  
+8. ```insertBack(T value)```<br>
+   it will take a value of type `T` as input and insert a new node containing that value at the end of the linked list. If the list is empty, the new node becomes both the `head` and `tail`; otherwise, it is linked after the current `tail`, and the `tail` pointer is updated to reference the newly inserted node.
+9. ```deleteBack()```<br>
+it will not take any parameter and will remove the last node from the linked list. If the list contains only one node, both the `head` and `tail` pointers are updated to `nullptr`; otherwise, the `tail` pointer is moved to the previous node, the last node is deallocated, and the new `tail`'s `next` pointer is set to `NULL`.
  
  ## Constructors 
 ### 1. Default Constructor
@@ -74,7 +78,7 @@ We have implemented the **Rule of Three** for the doubly linked list to ensure p
    The operation only requires creating a new node, updating its `next` pointer to the current head, updating the current head's `prev` pointer, and finally moving the `head` pointer to the new node. If the list is initially empty, both `head` and `tail` are updated to the new node. Since no traversal is required, the operation takes **O(1)** time in the best, average, and worst cases.<br>
 
 2. ```deleteFront()```<br>
-   Deleting the first node only requires moving the `head` pointer to the next node and updating the new head's `prev` pointer to `nullptr`. If the list contains only one node, both `head` and `tail` become `nullptr`. As no traversal is involved, the operation takes **O(1)** time in the best, average, and worst cases.<br>
+   Deleting the first node only requires moving the `head` pointer to the next node and updating the new head's `prev` pointer to `NULL`. If the list contains only one node, both `head` and `tail` become `NULL`. As no traversal is involved, the operation takes **O(1)** time in the best, average, and worst cases.<br>
 
 3. ```insertIndex(int index, T value)```<br>
 
@@ -84,15 +88,8 @@ We have implemented the **Rule of Three** for the doubly linked list to ensure p
 
    **Worst Case:** The operation takes **O(n)** time when the insertion position lies near the middle of the linked list. Even with both `head` and `tail` pointers, approximately half of the nodes must be traversed before inserting the new node, making the worst-case complexity **O(n)**.<br>
 
-4. ```deleteIndex(int index)```<br>
 
-   **Best Case:** The operation takes **O(1)** time when deleting the first or the last node because the `head` and `tail` pointers provide direct access.<br>
-
-   **Average Case:** The operation takes **O(n)** time because the node to be deleted must first be located. Traversal begins from the nearer end (`head` or `tail`), visiting approximately **min(index, n - index)** nodes on average.<br>
-
-   **Worst Case:** The operation takes **O(n)** time when the node to be deleted is located near the middle of the linked list, requiring traversal of approximately half of the nodes before deletion.<br>
-
-5. ```search(T value)```<br>
+4. ```search(T value)```<br>
 
    **Best Case:** The operation takes **O(1)** time when the required value is present in the first or the last node, depending on the direction of traversal.<br>
 
@@ -100,14 +97,26 @@ We have implemented the **Rule of Three** for the doubly linked list to ensure p
 
    **Worst Case:** The operation takes **O(n)** time when the required value is located near the middle of the linked list or is not present at all.<br>
 
-6. ```size()```<br>
+5. ```size()```<br>
    A separate variable is maintained to store the current number of nodes in the linked list. Therefore, the size is returned directly without any traversal, making the operation **O(1)** in all cases.<br>
 
-7. ```printForward()```<br>
+6. ```printForward()```<br>
    Printing the linked list in the forward direction requires visiting every node exactly once starting from the `head`. Therefore, the running time is directly proportional to the number of nodes, resulting in **O(N)** time complexity in all cases.<br>
 
-8. ```printBackward()```<br>
+7. ```printBackward()```<br>
    Since the implementation maintains a `tail` pointer and each node stores a `prev` pointer, the list can be traversed backward without any additional computation. Every node is still visited exactly once, so the operation also takes **O(N)** time in the best, average, and worst cases.<br>
+
+8. ```insertBack(T value)```<br>
+ **Time Complexity:** **O(1)**
+
+**Reason:** Since the linked list maintains a `tail` pointer and each node stores a pointer to its previous node, the last node can be removed directly without traversing the list.
+
+9. ```deleteBack()```<br>
+**Time Complexity:** **O(1)**
+
+**Reason:** Since the linked list maintains a `tail` pointer and each node stores a pointer to its previous node, the last node can be removed directly without traversing the list.
+
+
 
 ## Section 4 : Design Decision
 
