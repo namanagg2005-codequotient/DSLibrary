@@ -1,7 +1,6 @@
 #include "dynamicArray.h"
 #include <cstdlib>
 #include <new>
-#include <iostream>
 #include <stdexcept>
 
 template<typename T>
@@ -106,19 +105,24 @@ DynamicArray<T>::~DynamicArray()
 template<typename T>
 DynamicArray<T>& DynamicArray<T>::operator=(const DynamicArray<T>& obj)
 {
-    this->capacity = obj.capacity;
-    this->size = obj.size;
+    if (this == &obj)
+        return *this;
 
-    free(ptr);
-    ptr = NULL;
-
-    this->ptr = (T*)malloc(capacity * sizeof(T));
-    if (ptr == nullptr) {
+    T* newPtr = (T*)malloc(obj.capacity * sizeof(T));
+    if (newPtr == NULL)
         throw std::bad_alloc();
-    }
+
+    for (int i = 0; i < obj.size; i++)
+        new (&newPtr[i]) T(obj.ptr[i]);
 
     for (int i = 0; i < size; i++)
-        new (&ptr[i]) T(obj.ptr[i]);
+        ptr[i].~T();
+
+    free(ptr);
+
+    ptr = newPtr;
+    size = obj.size;
+    capacity = obj.capacity;
 
     return *this;
 }
