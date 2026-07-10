@@ -24,6 +24,29 @@ public:
     size_t operator()(const float& key) const;
 };
 
+template<typename K, typename V>
+class HashMap{
+    private:
+    HashNode<K,V>** bucket;
+    int size;
+    int capacity;
+    float threshold;
+    float loadFactor;
+    Hash<K> hasher;
+
+    int nextPowerOf2(int n);
+
+    public:
+    HashMap();
+    HashMap(int capacity);
+    
+
+    int getSize();
+    float getLoadFactor();
+
+}
+
+
 
 
 #include "hashMap.tpp"

@@ -12,9 +12,9 @@ A **Hash Map** is a data structure that stores data as **key–value pairs** and
 
 4. ```remove(T key)``` : It deletes the key-value pair corresponding to the given key from the HashMap. Since its only purpose is to remove an element, the return type is void. <br>
 
-5. ```size()``` : It returns the total number of key-value pairs currently stored in the HashMap, so the return type here is integer (size_t/int depending on the implementation). <br>
+5. ```getSize()``` : It returns the total number of key-value pairs currently stored in the HashMap, so the return type here is integer (size_t/int depending on the implementation). <br>
 
-6. ```loadFactor()``` : It returns the current load factor of the HashMap, which is calculated as the ratio of the total number of stored elements to the total number of buckets. Since the result can be a decimal value, the return type is float. <br>
+6. ```getLoadFactor()``` : It returns the current load factor of the HashMap, which is calculated as the ratio of the total number of stored elements to the total number of buckets. Since the result can be a decimal value, the return type is float. <br>
 
 7. ```rehash()``` : It is an internal helper function that is automatically invoked whenever the current load factor exceeds the maximum allowed load factor. The function creates a new bucket array with a larger capacity ie 2X , recomputes the bucket index of every existing key using the new bucket count, and redistributes all key-value pairs into their appropriate buckets. After successfully transferring all elements, the old bucket array is deallocated and the internal bucket count is updated. <br>
 
@@ -117,13 +117,13 @@ Since the HashMap maintains the load factor close to a constant value through re
 
 ---
 
-### 5. ```size()```<br>
+### 5. ```getSize()```<br>
 
 The operation takes **O(1)** time in the best, average, and worst cases because the HashMap maintains the current number of stored key-value pairs as a member variable. Returning this value does not require any traversal, hashing, or computation.<br>
 
 ---
 
-### 6. ```loadFactor()```<br>
+### 6. ```getLoadFactor()```<br>
 
 The operation takes **O(1)** time in the best, average, and worst cases because the load factor is calculated directly using the stored values of the current size and the total number of buckets. Since both values are maintained by the HashMap, no traversal or hashing operation is required.
 

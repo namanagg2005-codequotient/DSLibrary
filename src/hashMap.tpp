@@ -35,6 +35,19 @@ size_t Hash<K>::operator()(const int & key) const{
         return static_cast<size_t>(x);
     }
 }
+template<typename K,typename V>
+int HashMap<K,V>::nextPowerOf2(int n)
+{
+    if (n <= 1)
+        return 1;
+
+    n--;
+
+    for (int shift = 1; shift < sizeof(int) * 8; shift <<= 1)
+        n |= n >> shift;
+
+    return n + 1;
+}
 
 template<typename K>
 size_t Hash<K>::operator()(const char & key) const{
@@ -71,4 +84,54 @@ size_t Hash<K>::operator()(const float& key) const
     bits ^= bits >> 15;
 
     return static_cast<size_t>(bits);
+}
+
+template<typename K, typename V>
+HashMap<K, V>::HashMap()
+{
+    size = 0;
+    capacity = 8;
+    threshold = 0.75f;
+
+    bucket = (HashNode<K, V>**)malloc(capacity * sizeof(HashNode<K, V>*));
+
+    if (bucket == NULL)
+    {
+        throw std::bad_alloc();
+    }
+
+    for (int i = 0; i < capacity; i++)
+    {
+        bucket[i] = NULL;
+    }
+}
+
+template<typename K, typename V>
+HashMap<K, V>::HashMap(int initialCapacity)
+{
+    size = 0;
+    capacity = nextPowerOf2(initialCapacity);
+    threshold = 0.75f;
+
+    bucket = (HashNode<K, V>**)malloc(capacity * sizeof(HashNode<K, V>*));
+
+    if (bucket == NULL)
+    {
+        throw std::bad_alloc();
+    }
+
+    for (int i = 0; i < capacity; i++)
+    {
+        bucket[i] = NULL;
+    }
+}
+
+template<typename K, typename V>
+int HashMap<K, V>:: getSize(){
+    return size;
+}
+
+template<typename K, typename V>
+float HashMap<K, V>:: getLoadFactor(){
+    return loadFactor;
 }
