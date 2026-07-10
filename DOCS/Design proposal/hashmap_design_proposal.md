@@ -44,7 +44,7 @@ The copy constructor creates a deep copy of another HashMap object. It allocates
 
 ## Section 2 : Internal Representation
 
-![Hashmap memory diagram](../images/HashMap%20memory%20diagram.jpeg)
+![Hashmap memory diagram](../images/HashMap%20Updated%20Memory%20Diagram.jpeg)
 The **HashMap** class is a data structure that stores data in the form of **key-value pairs**. Internally, it consists of an array of buckets, where each bucket points to the head of a linked list. The bucket corresponding to a key is determined using a **hash function**, and any collisions are handled using **separate chaining**, allowing multiple key-value pairs to be stored within the same bucket.<br>
 
 In our implementation, the **Node** class and the bucket array are **internal implementation details** of the `HashMap` class. They are not intended to be accessed or manipulated directly by the user. Instead, all interactions with the HashMap are performed through its public member functions such as `set()`, `get()`, `exists()`, `remove()`, `size()`, and `loadFactor()`. This encapsulation hides the underlying hashing mechanism, collision resolution, and memory management while providing a clean, efficient, and user-friendly interface.<br>
