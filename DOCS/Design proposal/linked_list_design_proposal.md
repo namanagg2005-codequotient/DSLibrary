@@ -49,7 +49,7 @@ In our implementation, the **Node** class is an **internal implementation detail
 
 ### Constructors of the Node Class
 
-The `Node` class only requires a **parameterized constructor** to initialize the node's data and set its `next` and `prev` pointers appropriately. A default constructor may also be provided if required by the implementation.
+The `Node` class only requires **default ** and **parameterized constructor** to initialize the node's data and set its `next` and `prev` pointers appropriately. 
 
 ## Why the Node Class Does Not Implement the Rule of Three
 
@@ -70,64 +70,515 @@ During insertion and deletion, only these pointers are updated while the nodes t
 free when no longer needed.
 ### Rule of Three 
 
-We have implemented the **Rule of Three** for the doubly linked list to ensure proper management of dynamically allocated memory. The **destructor** traverses the entire linked list and deallocates every node created during execution, preventing memory leaks. The **copy constructor** performs a **deep copy** by creating new nodes for each element of the original list and correctly establishing both the `next` and `prev` links. This ensures that the copied list owns its own memory and remains completely independent of the original list. Similarly, the **copy assignment operator** first releases the memory occupied by the existing list and then performs a deep copy of the source list, duplicating all nodes while preserving the list structure and updating the `head`, `tail`, and `size` members appropriately.
+# Rule of Three
+
+The **Rule of Three** is a fundamental principle in C++ that states:
+
+> If a class manually manages a resource such as dynamically allocated memory, it should explicitly implement the following three special member functions:
+>
+> - Destructor
+> - Copy Constructor
+> - Copy Assignment Operator
+
+The `LinkedList<T>` class dynamically allocates memory for its nodes using `malloc()` and constructs them using placement `new`. Since the linked list owns these nodes, it is responsible for correctly copying and destroying them. The compiler-generated versions of these functions perform only shallow copying, which is not suitable for a linked list.
+
+---
+
+# Why is the Rule of Three Required?
+
+The linked list stores its elements using dynamically allocated nodes.
+
+```cpp
+Node<T>* head;
+Node<T>* tail;
+int length;
+```
+
+Both `head` and `tail` point to memory allocated on the heap.
+
+If the compiler-generated copy constructor or assignment operator is used, only these pointer values are copied.
+
+```
+List A
+
+head -----------+
+                |
+                v
+10 <-> 20 <-> 30
+
+List B
+
+head -----------+
+```
+
+Both lists now point to the same nodes.
+
+When one list is destroyed, the nodes are deallocated. The second list still contains pointers to the same memory, resulting in dangling pointers. When the second list is destroyed, it attempts to free the same memory again, causing **double-free errors** and undefined behavior.
+
+To avoid these problems, the linked list must implement the Rule of Three and perform **deep copying**.
+
+---
+
+# 1. Destructor
+
+## Purpose
+
+The destructor releases every node owned by the linked list before the object goes out of scope.
+
+### Responsibilities
+
+- Traverse the entire list.
+- Call the destructor of every node.
+- Release the memory occupied by each node.
+- Reset the member variables.
+
+### Why is it Required?
+
+Every node is allocated dynamically.
+
+```cpp
+Node<T>* node = (Node<T>*)malloc(sizeof(Node<T>));
+new (node) Node<T>(value);
+```
+
+Since the nodes are constructed using placement `new`, they must also be destroyed manually before calling `free()`.
+
+Without the destructor:
+
+- Memory allocated for every node remains allocated.
+- Stored objects are never destroyed.
+- Memory leaks occur.
+
+---
+
+# 2. Copy Constructor
+
+## Purpose
+
+The copy constructor creates a completely independent copy of an existing linked list.
+
+Example:
+
+```cpp
+LinkedList<int> list2(list1);
+```
+
+The new list should contain new nodes storing the same values.
+
+### Responsibilities
+
+- Initialize an empty list.
+- Traverse the source list.
+- Create a new node for every element.
+- Preserve the order of elements.
+
+### Why is it Required?
+
+The compiler-generated copy constructor performs a shallow copy.
+
+```
+Compiler Copy
+
+list1
+
+10 <-> 20 <-> 30
+
+list2
+
+10 <-> 20 <-> 30
+```
+
+Both lists share the same nodes.
+
+A proper copy constructor performs a deep copy.
+
+```
+Deep Copy
+
+list1
+
+10 <-> 20 <-> 30
+
+list2
+
+10 <-> 20 <-> 30
+```
+
+Although the values are identical, every node is newly allocated, making both lists completely independent.
+
+---
+
+# 3. Copy Assignment Operator
+
+## Purpose
+
+The copy assignment operator replaces the contents of one existing linked list with another.
+
+Example:
+
+```cpp
+list2 = list1;
+```
+
+Unlike the copy constructor, both objects already exist before the assignment.
+
+### Responsibilities
+
+- Detect self-assignment.
+- Destroy the existing list.
+- Release previously allocated memory.
+- Deep copy every node from the source list.
+- Return the current object.
+
+### Why is it Required?
+
+If the compiler-generated assignment operator is used,
+
+```
+Before Assignment
+
+list1
+
+10 <-> 20 <-> 30
+
+list2
+
+1 <-> 2 <-> 3
+```
+
+After assignment,
+
+```
+list1
+
+10 <-> 20 <-> 30
+
+list2
+
+10 <-> 20 <-> 30
+```
+
+Both lists point to the same nodes.
+
+The original nodes of `list2` are leaked, and both objects now attempt to delete the same memory during destruction.
+
+A custom assignment operator first destroys the existing list and then creates a deep copy of the source list.
+
+
 
 ## Section 3 : Complexity Estimates
 
-1. ```insertFront(T value)```<br>
-   The operation only requires creating a new node, updating its `next` pointer to the current head, updating the current head's `prev` pointer, and finally moving the `head` pointer to the new node. If the list is initially empty, both `head` and `tail` are updated to the new node. Since no traversal is required, the operation takes **O(1)** time in the best, average, and worst cases.<br>
+## Time Complexity Analysis
 
-2. ```deleteFront()```<br>
-   Deleting the first node only requires moving the `head` pointer to the next node and updating the new head's `prev` pointer to `NULL`. If the list contains only one node, both `head` and `tail` become `NULL`. As no traversal is involved, the operation takes **O(1)** time in the best, average, and worst cases.<br>
+### 1. `insertFront(T value)`
 
-3. ```insertIndex(int index, T value)```<br>
+- **Best Case:** **O(1)**  
+  When the list is empty, the new node becomes both the `head` and the `tail`. Only a few pointer updates are performed.
 
-   **Best Case:** The operation takes **O(1)** time when the insertion index is `0` (front) or `size()` (end), as both the `head` and `tail` pointers provide direct access to these positions.<br>
+- **Average Case:** **O(1)**  
+  Regardless of the number of nodes present, insertion at the front only requires creating a new node and updating a constant number of pointers.
 
-   **Average Case:** The operation takes **O(n)** time because the insertion position must first be located. Since the list has both `head` and `tail` pointers, traversal starts from whichever end is closer, requiring approximately **min(index, n - index)** node visits on average. Although this reduces the traversal distance, the asymptotic complexity remains **O(n)**.<br>
+- **Worst Case:** **O(1)**  
+  Even for a very large linked list, no traversal is required. The operation always performs a fixed number of pointer assignments.
 
-   **Worst Case:** The operation takes **O(n)** time when the insertion position lies near the middle of the linked list. Even with both `head` and `tail` pointers, approximately half of the nodes must be traversed before inserting the new node, making the worst-case complexity **O(n)**.<br>
+**Reason:**  
+The operation directly inserts the new node before the current `head`. Since only the `head`, the new node, and at most one existing node are modified, the execution time remains constant.
 
+---
 
-4. ```search(T value)```<br>
+### 2. `deleteFront()`
 
-   **Best Case:** The operation takes **O(1)** time when the required value is present in the first or the last node, depending on the direction of traversal.<br>
+- **Best Case:** **O(1)**  
+  When the list contains only one node, deleting it simply resets both `head` and `tail` to `NULL`.
 
-   **Average Case:** The operation takes **O(n)** time because, on average, approximately half of the nodes must be traversed before finding the required value. Having both `head` and `tail` pointers only reduces the number of nodes visited but does not change the asymptotic complexity.<br>
+- **Average Case:** **O(1)**  
+  Deleting the first node only requires updating the `head` pointer and adjusting the `prev` pointer of the new first node.
 
-   **Worst Case:** The operation takes **O(n)** time when the required value is located near the middle of the linked list or is not present at all.<br>
+- **Worst Case:** **O(1)**  
+  Even in the largest linked list, the first node is removed without traversing the list.
 
-5. ```size()```<br>
-   A separate variable is maintained to store the current number of nodes in the linked list. Therefore, the size is returned directly without any traversal, making the operation **O(1)** in all cases.<br>
+**Reason:**  
+Only a constant number of pointer updates and memory deallocation operations are performed.
 
-6. ```printForward()```<br>
-   Printing the linked list in the forward direction requires visiting every node exactly once starting from the `head`. Therefore, the running time is directly proportional to the number of nodes, resulting in **O(N)** time complexity in all cases.<br>
+---
 
-7. ```printBackward()```<br>
-   Since the implementation maintains a `tail` pointer and each node stores a `prev` pointer, the list can be traversed backward without any additional computation. Every node is still visited exactly once, so the operation also takes **O(N)** time in the best, average, and worst cases.<br>
+### 3. `insert(int index, T value)`
 
-8. ```insertBack(T value)```<br>
- **Time Complexity:** **O(1)**
+- **Best Case:** **O(1)**  
+  When `index == 0` or `index == size()`, the operation becomes either `insertFront()` or `insertBack()`, both of which execute in constant time.
 
-**Reason:** Since the linked list maintains a `tail` pointer and each node stores a pointer to its previous node, the last node can be removed directly without traversing the list.
+- **Average Case:** **O(N)**  
+  The insertion position must first be located by traversing the linked list. On average, approximately half of the nodes are visited before inserting the new node.
 
-9. ```deleteBack()```<br>
-**Time Complexity:** **O(1)**
+- **Worst Case:** **O(N)**  
+  When the insertion index lies near the middle of the linked list, approximately half of the nodes must be traversed before the insertion can be performed.
 
-**Reason:** Since the linked list maintains a `tail` pointer and each node stores a pointer to its previous node, the last node can be removed directly without traversing the list.
+**Reason:**  
+Although the actual insertion only modifies a few pointers, locating the insertion position dominates the running time.
+
+---
+
+### 4. `search(T value)`
+
+- **Best Case:** **O(1)**  
+  The required value is found in the first node.
+
+- **Average Case:** **O(N)**  
+  On average, approximately half of the nodes must be examined before the desired value is found.
+
+- **Worst Case:** **O(N)**  
+  The required value is located in the last node or is not present in the list, requiring traversal of every node.
+
+**Reason:**  
+Since linked lists do not provide direct indexing, elements must be searched sequentially.
+
+---
+
+### 5. `size()`
+
+- **Best Case:** **O(1)**  
+  The stored `length` variable is returned directly.
+
+- **Average Case:** **O(1)**  
+  The number of nodes does not affect the execution time.
+
+- **Worst Case:** **O(1)**  
+  Even for a very large linked list, the function simply returns the stored size.
+
+**Reason:**  
+The linked list maintains the current number of nodes using the `length` member variable.
+
+---
+
+### 6. `printForward()`
+
+- **Best Case:** **O(N)**  
+  Every node must be visited and printed exactly once.
+
+- **Average Case:** **O(N)**  
+  The entire linked list is traversed from `head` to `tail`.
+
+- **Worst Case:** **O(N)**  
+  Regardless of the data stored, every node is printed exactly once.
+
+**Reason:**  
+Printing requires visiting every node of the linked list.
+
+---
+
+### 7. `printBackward()`
+
+- **Best Case:** **O(N)**  
+  Every node is visited once while traversing from `tail` to `head`.
+
+- **Average Case:** **O(N)**  
+  The operation traverses the entire linked list in reverse order.
+
+- **Worst Case:** **O(N)**  
+  All nodes are printed exactly once regardless of the list contents.
+
+**Reason:**  
+The `tail` pointer and each node's `prev` pointer allow reverse traversal, but every node must still be visited.
+
+---
+
+### 8. `insertBack(T value)`
+
+- **Best Case:** **O(1)**  
+  When the list is empty, the new node becomes both the `head` and `tail`.
+
+- **Average Case:** **O(1)**  
+  The `tail` pointer provides direct access to the last node, allowing insertion without traversal.
+
+- **Worst Case:** **O(1)**  
+  Even for a very large linked list, insertion only updates a constant number of pointers.
+
+**Reason:**  
+Maintaining a `tail` pointer eliminates the need to traverse the list before inserting at the end.
+
+---
+
+### 9. `deleteBack()`
+
+- **Best Case:** **O(1)**  
+  When only one node exists, deleting it simply resets `head` and `tail`.
+
+- **Average Case:** **O(1)**  
+  The `tail` pointer directly identifies the last node, allowing it to be removed immediately.
+
+- **Worst Case:** **O(1)**  
+  Regardless of the list size, deleting the last node only requires updating a constant number of pointers.
+
+**Reason:**  
+Since every node stores a `prev` pointer and the linked list maintains a `tail` pointer, the last node can be removed without traversing the list.
 
 
 
 ## Section 4 : Design Decision
 
-__Maintaining a `length` Variable__
+## 1. Choice of Doubly Linked List
 
-In our linked list implementation, we maintain a dedicated variable named `length` to store the current number of nodes in the list. This variable is updated after every insertion and deletion operation, allowing the program to determine the size of the linked list in **O(1)** time. Without this variable, every request to find the size of the list would require traversing all the nodes from the head to the end, resulting in **O(n)** time complexity. This becomes inefficient when the size is accessed frequently, especially for large linked lists or within loops. By maintaining the `length` variable, operations such as checking whether the list is empty, validating indices, and reporting the number of elements become significantly faster. The only drawback of this approach is that the `length` variable must always be updated correctly during every insertion and deletion. If an update is missed due to a programming error, the stored size will become inconsistent with the actual number of nodes. However, this drawback is minor compared to the substantial performance improvement gained by constant-time size retrieval.
+The first design decision was selecting the type of linked list to implement. After comparing singly and doubly linked lists, a **Doubly Linked List** was chosen.
 
-__Why We Chose a Doubly Linked List__
+### Reasoning
 
-Our implementation uses a **Doubly Linked List** because the project requires efficient insertion and deletion operations at both the **front** and the **end** of the list. By maintaining both **head** and **tail** pointers along with **next** and **prev** pointers in every node, the list supports bidirectional traversal, allowing movement in both forward and backward directions. This enables operations such as inserting or deleting the last node in **O(1)** time without traversing the entire list.
+A doubly linked list stores two pointers in every node:
 
-Unlike a singly linked list, where each node stores only a **next** pointer and backward traversal is impossible, a doubly linked list stores both **next** and **prev** pointers, making navigation from either end of the list efficient. During operations such as insertion or deletion at an arbitrary position, traversal can begin from whichever end (**head** or **tail**) is closer to the target index. Although the worst-case complexity remains **O(N)**, the average number of nodes traversed is significantly reduced.
+- `next` – points to the next node.
+- `prev` – points to the previous node.
 
-Applications such as browser history navigation, undo/redo systems, music playlists, image viewers, and trees implementations benefit from the ability to move in both directions efficiently. Since our project maintains both **head** and **tail** pointers and can take advantage of bidirectional traversal, choosing a **Doubly Linked List** provides greater flexibility, improves the efficiency of end operations, simplifies backward traversal, and results in a more versatile and maintainable implementation despite the slight increase in memory usage per node.
+Although this requires one additional pointer per node compared to a singly linked list, it offers greater flexibility and improves the efficiency of several operations.
+
+### Why Doubly Linked List?
+
+- Supports traversal in both forward and backward directions.
+- Enables **O(1)** deletion of the last node using the `prev` pointer.
+- Makes insertion and deletion easier when the target node is already known.
+- Better suited for applications such as browser history, undo/redo systems, music playlists, and navigation systems.
+- Eliminates the need to traverse from the beginning whenever backward movement is required.
+
+The additional memory required for storing the `prev` pointer was considered an acceptable trade-off for the improved functionality and ease of implementation.
+
+---
+
+# 2. Maintaining Both `head` and `tail` Pointers
+
+Instead of storing only a pointer to the first node, the implementation maintains pointers to both the first and last nodes.
+
+```cpp
+Node<T>* head;
+Node<T>* tail;
+```
+
+### Reasoning
+
+If only a `head` pointer were maintained, every insertion or deletion at the end of the list would require traversing all the nodes to locate the last node.
+
+For example:
+
+```
+Head
+
+10 <-> 20 <-> 30 <-> 40
+```
+
+To insert `50` at the end, the entire list would have to be traversed.
+
+Time Complexity:
+
+```
+O(N)
+```
+
+By maintaining a `tail` pointer,
+
+```
+Head                    Tail
+
+10 <-> 20 <-> 30 <-> 40
+```
+
+the last node is immediately accessible.
+
+### Benefits
+
+- `insertBack()` executes in **O(1)** time.
+- `deleteBack()` executes in **O(1)** time.
+- Efficient access to both ends of the linked list.
+- Simplifies implementation of operations involving the last node.
+
+The extra memory required for storing one additional pointer is very small compared to the performance improvement achieved.
+
+---
+
+# 3. Generic Implementation Using Templates
+
+The linked list was implemented as a template class.
+
+```cpp
+template<typename T>
+class LinkedList
+```
+
+### Reasoning
+
+Using templates allows the same implementation to work with any data type without rewriting the linked list for each type.
+
+Examples:
+
+```cpp
+LinkedList<int>
+
+LinkedList<double>
+
+LinkedList<char>
+
+LinkedList<string>
+
+LinkedList<Student>
+```
+
+### Benefits
+
+- Code reusability.
+- Compile-time type safety.
+- Eliminates duplicate implementations for different data types.
+- Supports both primitive and user-defined data types.
+- Makes the linked list suitable for use as a generic data structure library.
+
+This design follows the principles of generic programming by separating the data structure implementation from the type of data it stores.
+
+---
+
+# 4. Maintaining a Separate Size Variable
+
+The implementation maintains the current number of nodes using a dedicated member variable.
+
+```cpp
+int length;
+```
+
+### Reasoning
+
+An alternative approach would be to calculate the size by traversing the entire linked list whenever `size()` is called.
+
+For example,
+
+```
+Head
+
+10 <-> 20 <-> 30 <-> 40 <-> 50
+```
+
+To determine the size, every node would have to be visited.
+
+Time Complexity:
+
+```
+O(N)
+```
+
+Instead, the `length` variable is updated after every insertion and deletion.
+
+```
+Insertion  → length++
+
+Deletion   → length--
+```
+
+As a result,
+
+```cpp
+size()
+```
+
+simply returns the stored value.
+
+### Benefits
+
+- `size()` executes in **O(1)** time.
+- Eliminates unnecessary traversal.
+- Improves performance when the size is requested frequently.
+- Keeps the implementation efficient even for very large linked lists.
+
+The small amount of additional memory required for storing one integer is negligible compared to the significant improvement in retrieval time.

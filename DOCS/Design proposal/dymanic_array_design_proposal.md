@@ -420,7 +420,7 @@ A new memory block capable of storing all existing elements (and additional capa
 ## Section 4: Design Decisions
 
 
-__1. Initial Capacity of the Dynamic Array__
+## 1. Initial Capacity of the Dynamic Array
 
 Instead of starting with a capacity of **1**, I chose an initial capacity of **4**.
 
@@ -528,4 +528,41 @@ The next power of two is computed using bitwise operations rather than loops.
 Since only a fixed number of bitwise operations are performed, the computation runs in **O(1)** time.
 
 ---
+
+## 5. Generic Implementation Using Templates
+
+The Dynamic Array was implemented as a template class.
+
+```cpp
+template<typename T>
+class DynamicArray
+```
+
+### Reasoning
+
+Using templates allows the same implementation to store elements of any data type without rewriting the data structure for each individual type.
+
+Examples:
+
+```cpp
+DynamicArray<int>
+
+DynamicArray<double>
+
+DynamicArray<char>
+
+DynamicArray<string>
+
+DynamicArray<Student>
+```
+
+### Benefits
+
+- Promotes code reusability.
+- Provides compile-time type safety.
+- Eliminates duplicate implementations for different data types.
+- Supports both primitive and user-defined data types.
+- Makes the implementation suitable for use as a generic data structures library.
+
+Using templates separates the implementation of the container from the type of data it stores, making the class flexible and reusable.
 
