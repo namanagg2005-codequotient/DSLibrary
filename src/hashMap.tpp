@@ -163,6 +163,34 @@ HashMap<K, V>::HashMap(int initialCapacity)
 }
 
 template<typename K, typename V>
+HashMap<K, V>::HashMap(const HashMap<K, V>& other)
+{
+    size = 0;
+    capacity = other.capacity;
+    threshold = other.threshold;
+    loadFactor = 0.0f;
+    hasher = other.hasher;
+    bucket = (HashNode<K, V>**)malloc(capacity * sizeof(HashNode<K, V>*));
+    if (bucket == NULL)
+    {
+        throw std::bad_alloc();
+    }
+    for (int i = 0; i < capacity; i++)
+    {
+        bucket[i] = NULL;
+    }
+    for (int i = 0; i < other.capacity; i++)
+    {
+        HashNode<K, V>* cur = other.bucket[i];
+        while (cur)
+        {
+            set(cur->key, cur->value);
+            cur = cur->next;
+        }
+    }
+}
+
+template<typename K, typename V>
 HashMap<K, V>::~HashMap()
 {
     for (int i = 0; i < capacity; i++)
@@ -209,7 +237,7 @@ void HashMap<K,V> :: set(const K key,const V value){
     if(getLoadFactor() > threshold){
         rehash();
     }
-    
+
     return;
     
 }
@@ -237,6 +265,62 @@ void HashMap<K,V> :: remove(const K key){
     free(cur);
     size--;
     return;
+}
+
+template<typename K, typename V>
+HashMap<K, V>& HashMap<K, V>::operator=(const HashMap<K, V>& other)
+{
+    if (this == &other)
+    {
+        return *this;
+    }
+    for (int i = 0; i < capacity; i++)
+    {
+        HashNode<K, V>* cur = bucket[i];
+
+        while (cur)
+        {
+            HashNode<K, V>* next = cur->next;
+            cur->~HashNode<K, V>();
+            free(cur);
+            cur = next;
+        }
+    }
+
+    free(bucket);
+    
+    capacity = other.capacity;
+    size = 0;
+    threshold = other.threshold;
+    loadFactor = other.loadFactor;
+    hasher = other.hasher;
+
+    
+    bucket = (HashNode<K, V>**)malloc(capacity * sizeof(HashNode<K, V>*));
+
+    if (bucket == NULL)
+    {
+        throw std::bad_alloc();
+    }
+
+    for (int i = 0; i < capacity; i++)
+    {
+        bucket[i] = NULL;
+    }
+
+    
+    for (int i = 0; i < other.capacity; i++)
+    {
+        HashNode<K, V>* cur = other.bucket[i];
+
+        while (cur)
+        {
+            set(cur->key, cur->value);
+            cur = cur->next;
+        }
+    }
+
+    return *this;
 }
 
 template<typename K, typename V>

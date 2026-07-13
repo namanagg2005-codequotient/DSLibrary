@@ -44,6 +44,8 @@ class HashMap{
     HashMap(const HashMap<K,V>&obj);
     ~HashMap();
 
+    HashMap<K,V>& operator=(const HashMap<K,V>& obj);
+
     void set(const K key,const V value);
     V& get(const K key);
     void remove(const K key);
