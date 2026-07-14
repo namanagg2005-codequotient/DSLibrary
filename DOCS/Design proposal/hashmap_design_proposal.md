@@ -2,7 +2,7 @@
 
 A **Hash Map** is a data structure that stores data as **key–value pairs** and provides **average-case O(1)** time complexity for insertion, deletion, and searching. It uses a **hash function** to convert a key into an array index, called a **bucket**, where the corresponding value is stored. If multiple keys produce the same hash index a **collision** occurs, the hash map resolves it using techniques such as **separate chaining** or **open addressing**. Hash maps are widely used in applications requiring fast data retrieval, such as caching, database indexing, and frequency counting.
 
-## Section 1 : Public Apiw23
+## Section 1 : Public Api
 
 1. ```set(K key, V value)``` : It takes a key-value pair as input and inserts it into the HashMap. If the key already exists, its corresponding value is updated with the new value. Since the user already knows the key and value they want to store, the return type is void. <br>
 
@@ -18,20 +18,26 @@ A **Hash Map** is a data structure that stores data as **key–value pairs** and
 
 7. ```rehash()``` : It is an internal helper function that is automatically invoked whenever the current load factor exceeds the maximum allowed load factor. The function creates a new bucket array with a larger capacity ie 2X , recomputes the bucket index of every existing key using the new bucket count, and redistributes all key-value pairs into their appropriate buckets. After successfully transferring all elements, the old bucket array is deallocated and the internal bucket count is updated. <br>
 
+8. ```nextPowerOf2(int n)```
+
+This helper function computes the smallest power of two that is greater than or equal to the supplied integer. It is used during the construction of the `HashMap` whenever the user specifies an initial bucket capacity. Instead of using the requested capacity directly, the value is rounded up to the nearest power of two to ensure that the internal bucket array always has a power-of-two size.
+
+Maintaining the bucket count as a power of two provides a predictable resizing strategy and keeps the implementation consistent throughout the lifetime of the HashMap. The function performs this computation using a sequence of bitwise operations, making it significantly more efficient than repeatedly multiplying by two or using iterative loops.
+
 ## Constructors
 
 __1. Default Constructor__
 
 ```HashMap();```
 
-The default constructor initializes an empty HashMap with a predefined number of buckets (for example, 16). It allocates memory for the bucket array, initializes all bucket pointers to `nullptr`, sets the current size to `0`, and initializes the maximum load factor.
+The default constructor initializes an empty HashMap with an initial bucket capacity of 8. It creates a DynamicArray containing empty LinkedList<HashNode<K,V>> buckets, initializes the current size to 0, sets the load factor to 0.0, and initializes the load factor threshold.
 
 
 __2. Parameterized Constructor__
 
 ```HashMap(int initialBucketCount);```
 
-The parameterized constructor allows the user to specify the initial number of buckets in the HashMap. It allocates the required bucket array, initializes every bucket to `nullptr`, and starts with an empty HashMap having a size of `0`.
+The parameterized constructor allows the user to specify the initial bucket capacity. The supplied capacity is rounded up to the nearest power of two before creating the DynamicArray of buckets. Every bucket is initialized as an empty LinkedList<HashNode<K,V>>, while the size and load factor are initialized to zero.
 
 
 
@@ -45,9 +51,40 @@ The copy constructor creates a deep copy of another HashMap object. It allocates
 ## Section 2 : Internal Representation
 
 ![Hashmap memory diagram](../images/HashMap%20Updated%20Memory%20Diagram.jpeg)
-The **HashMap** class is a data structure that stores data in the form of **key-value pairs**. Internally, it consists of an array of buckets, where each bucket points to the head of a linked list. The bucket corresponding to a key is determined using a **hash function**, and any collisions are handled using **separate chaining**, allowing multiple key-value pairs to be stored within the same bucket.<br>
+The **HashMap** class is a data structure that stores data in the form of **key-value pairs**. Internally, the HashMap stores its buckets inside a `DynamicArray<LinkedList<HashNode<K,V>>>`. Each element of the DynamicArray represents one bucket, implemented as a linked list. Every node of the linked list stores a HashNode object containing a key-value pair. Whenever multiple keys map to the same bucket, they are stored inside the corresponding linked list using separate chaining. <br>
 
-In our implementation, the **Node** class and the bucket array are **internal implementation details** of the `HashMap` class. They are not intended to be accessed or manipulated directly by the user. Instead, all interactions with the HashMap are performed through its public member functions such as `set()`, `get()`, `exists()`, `remove()`, `size()`, and `loadFactor()`. This encapsulation hides the underlying hashing mechanism, collision resolution, and memory management while providing a clean, efficient, and user-friendly interface.<br>
+In our implementation, the **HashNode** class and the bucket array are **internal implementation details** of the `HashMap` class. They are not intended to be accessed or manipulated directly by the user. Instead, all interactions with the HashMap are performed through its public member functions such as `set()`, `get()`, `exists()`, `remove()`, `size()`, and `loadFactor()`. This encapsulation hides the underlying hashing mechanism, collision resolution, and memory management while providing a clean, efficient, and user-friendly interface.<br>
+
+## HashNode Class
+
+The HashNode class represents a single key-value pair stored inside the HashMap.
+
+Each HashNode stores:
+
+- Key
+- Value
+
+The equality operator (`==`) compares only the keys, allowing the linked list to search, update, and remove nodes based solely on their keys.
+
+Since HashNode does not own any dynamically allocated memory, it does not implement the Rule of Three.
+
+## Hash Class
+
+Hash value computation is delegated to a separate template class named `Hash`.
+
+Specialized implementations are provided for:
+
+- int
+- char
+- float
+- std::string
+
+For user-defined types, the generic implementation expects the class to provide
+
+```cpp
+size_t createHash() const;
+```
+If this function is not available, compilation fails through a compile-time check, ensuring that unsupported key types cannot be used accidentally.
 
 ### Rule of Three
 
@@ -57,7 +94,7 @@ __1. Destructor__
 
 ```~HashMap();```
 
-The destructor is responsible for releasing all dynamically allocated memory. It traverses every bucket, deletes each node in the corresponding linked list, and finally deallocates the bucket array, ensuring that no memory leaks occur.
+The HashMap itself does not directly manage individual nodes. Instead, memory ownership is delegated to the DynamicArray and LinkedList classes. When a HashMap object is destroyed, the DynamicArray destructor automatically destroys every LinkedList, and each LinkedList destructor releases all of its nodes. Thus, the HashMap destructor only needs to destroy its member objects..
 
 
 __2. Copy Constructor__
@@ -138,7 +175,21 @@ Since the HashMap maintains the load factor close to a constant value through re
 **Average Case:** The operation takes **O(n)** time because each of the `n` stored key-value pairs is traversed exactly once. Assuming a good hash function distributes keys uniformly, recomputing the bucket index and inserting each node into the new bucket array takes **O(1)** time on average. Since this constant-time work is performed for every element, the total complexity becomes **O(n)**.<br>
 
 **Worst Case:** The operation takes **O(n)** time because every key-value pair must be rehashed and transferred to the new bucket array. Even if excessive collisions occur, each existing node is still processed exactly once during rehashing. Therefore, the overall complexity remains **O(n)**.<br>
+### 8. `nextPowerOf2(int n)`
 
+**Best Case:** **O(1)**  
+When the supplied value is less than or equal to the minimum bucket capacity (`8`), the function immediately returns `8` without performing any additional computation.
+
+**Average Case:** **O(1)**  
+For larger values, the function performs a fixed sequence of bitwise shift and OR operations. The number of iterations depends only on the size of the integer type (e.g., 32 bits) and not on the input value.
+
+**Worst Case:** **O(1)**  
+Even for the largest valid integer, the function executes the same constant number of bitwise operations before returning the next power of two.
+
+**Reason:**  
+The loop does **not** depend on the value of `n`; it depends only on the number of bits in an `int`. For a 32-bit integer, the loop executes only **5 iterations** (`shift = 1, 2, 4, 8, 16`). Since this is a constant amount of work, the time complexity is **O(1)**.
+
+<br>
 
 
 
@@ -216,21 +267,26 @@ Separate Chaining is preferred because it is simple to implement, handles collis
 
 ### Options Considered
 
-1. Hardcode hash functions for every supported data type.
-2. Use function overloading for primitive and custom types.
-3. Design a generic `Hash` class that computes hash values.
+1. Hardcode hashing inside HashMap.
+
+2. Design a separate Hash template class with explicit specializations.
 
 ### Decision Taken
 
-A separate **`Hash`** class has been implemented, overloading  **`()`** operator responsible for generating the hash value of a given key.
+A separate `Hash` template class was implemented. Explicit specializations provide hashing for primitive types (`int`, `char`, `float`, and `std::string`), while user-defined classes implement their own hashing strategy through
 
-For primitive data types, predefined hashing logic is provided. For user-defined classes, the user specifies which data members should participate in hashing by implementing their own `createHash()` function. Additionally, the user must overload the **`==` operator** so that two keys can be correctly compared during searching, insertion, updating, and deletion.
+```cpp
+size_t createHash() const;
+```
+Separating hashing from the HashMap improves modularity, makes the implementation easier to extend, and follows the same design philosophy as std::hash used by the C++ Standard Library.
 
 ### Reason
 
 The HashMap is designed to work with any data type, whether it is a primitive type like int or a user-defined class like Student or Employee. Since the HashMap does not know the internal structure of a user-defined class, it cannot decide which data members should be used to generate the hash value. For example, in a Student class, one programmer may want to hash only the rollNo, while another may want to hash both rollNo and name. Therefore, the responsibility of generating the hash value is given to the user through the Hash class.
 
 Similarly, when two keys are stored in the same bucket due to a collision, the HashMap must compare them to determine whether they represent the same object. Since the HashMap does not know how two user-defined objects should be compared, the user is required to overload the equality operator (==) in their class. This allows the HashMap to correctly identify matching keys during searching, insertion, updating, and deletion.
+
+
 
 
 
