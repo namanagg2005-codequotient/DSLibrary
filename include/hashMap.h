@@ -1,6 +1,7 @@
 #ifndef HASHMAP_H
 #define HASHMAP_H
 #include "dynamicArray.h"
+#include "linkedList.h"
 #include <cstddef>
 #include <cstring>
 
@@ -12,7 +13,8 @@ public:
     V value;
     
     HashNode();
-    HashNode(K &key, V &value);
+    HashNode(const K &key,const V &value);
+    HashNode(const K &key);
     bool operator==(const HashNode& other) const;
     ~HashNode();
 };
@@ -25,7 +27,7 @@ public:
     size_t operator()(const char& key) const;
     size_t operator()(const float& key) const;
     size_t operator()(const std::string& key) const;
-    // size_t operator()(const T& key) const;
+    size_t operator()(const K& key) const;
 };
 
 template<typename K, typename V>
@@ -42,11 +44,10 @@ private:
     Hash<K> hasher;
 
     int nextPowerOf2(int n);
-    HashNode<K,V>* find(HashNode<K,V>* head, const K& key);
     void rehash();
 
 public:
-    HashMap<K,V>();
+    HashMap();
     HashMap(int capacity);
     HashMap(const HashMap<K,V>& obj);
     ~HashMap();

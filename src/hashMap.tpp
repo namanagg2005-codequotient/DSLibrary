@@ -1,10 +1,30 @@
 #include "hashMap.h"
+#include "linkedList.h"
 #include "dynamicArray.h"
 #include <cstddef>
 #include <cstring>
 #include <iostream>
 #include <stdexcept>
 #include <cstdint>
+#include <type_traits>
+#include <utility>
+
+
+template<typename, typename = void>
+struct HasCreateHash : std::false_type
+{
+};
+
+
+template<typename T>
+struct HasCreateHash<
+    T,
+    std::void_t<
+        decltype(std::declval<const T>().createHash())
+    >
+> : std::true_type
+{
+};
 
 template<typename K,typename V>
 HashNode<K,V>::HashNode(){
@@ -12,9 +32,15 @@ HashNode<K,V>::HashNode(){
     value = V();
 }
 template<typename K,typename V>
-HashNode<K,V>::HashNode(K &key, V &value){
+HashNode<K,V>::HashNode(const K &key,const V &value){
     this->key = key;
     this->value = value;
+    
+}
+template<typename K,typename V>
+HashNode<K,V>::HashNode(const K &key){
+    this->key = key;
+    this->value = V();
     
 }
 template<typename K, typename V>
@@ -58,30 +84,25 @@ void HashMap<K,V>::rehash()
     int oldCapacity = capacity;
     capacity *= 2;
 
-    DynamicArray<HashNode<K,V>*> newBuckets(capacity);
+    DynamicArray<LinkedList<HashNode<K,V>>> newBuckets(capacity);
 
     for (int i = 0; i < capacity; i++)
     {
-        newBuckets.append(NULL);
+        newBuckets.append(LinkedList<HashNode<K,V>>());
     }
 
     for (int i = 0; i < oldCapacity; i++)
     {
-        HashNode<K,V>* cur = buckets[i];
+        Node<HashNode<K,V>>* cur = buckets[i].getHead();
 
         while (cur)
         {
-            HashNode<K,V>* nextNode = cur->next;
+            int index = hasher(cur->value.key) % capacity;
 
-            int index = hasher(cur->key) % capacity;
+            newBuckets[index].insertFront(cur->value);
 
-            cur->next = newBuckets[index];
-            newBuckets[index] = cur;
-
-            cur = nextNode;
+            cur = cur->next;
         }
-
-        buckets[i] = NULL;
     }
 
     buckets = newBuckets;
@@ -121,6 +142,14 @@ size_t Hash<K>::operator()(const std::string& key) const
     }
 
     return static_cast<size_t>(hash);
+}
+template<typename K>
+size_t Hash<K>::operator()(const K& obj) const{
+    static_assert(
+        HasCreateHash<K>::value,
+        "User-defined type must implement createHash()"
+    );
+    return obj.createHash();
 }
 template<typename K, typename V>
 HashMap<K, V>::HashMap()
@@ -186,39 +215,28 @@ HashMap<K, V>::~HashMap()
     capacity = 0;
     loadFactor = 0.0f;
 }
-
-
 template<typename K, typename V>
-void HashMap<K,V>::set(const K &key, const V &value)
+void HashMap<K,V>::set(const K& key, const V& value)
 {
-    size_t hashValue = hasher(key);
-    int destinationBucket = hashValue % capacity;
+    int destinationBucket = hasher(key) % capacity;
 
-    HashNode<K,V>* temp = buckets[destinationBucket];
-    HashNode<K,V>* location = find(temp, key);
+    HashNode<K,V> temp(key, value);
+
+    Node<HashNode<K,V>>* location =
+        buckets[destinationBucket].findNode(temp);
 
     if (location)
     {
-        location->value = value;
+        location->value.value = value;
         return;
     }
 
-    HashNode<K,V>* newNode =
-        (HashNode<K,V>*)malloc(sizeof(HashNode<K,V>));
-
-    if (newNode == nullptr)
-    {
-        throw std::bad_alloc();
-    }
-
-    new (newNode) HashNode<K,V>(key, value);
-
-    newNode->next = temp;
-    buckets[destinationBucket] = newNode;
+    buckets[destinationBucket].insertFront(temp);
 
     size++;
+    loadFactor = static_cast<float>(size) / capacity;
 
-    if (getLoadFactor() > threshold)
+    if (loadFactor > threshold)
     {
         rehash();
     }
@@ -227,30 +245,17 @@ template<typename K, typename V>
 void HashMap<K,V>::remove(const K& key)
 {
     int index = hasher(key) % capacity;
-    HashNode<K,V>* cur = find(buckets[index], key);
-    if (!cur)
+
+    HashNode<K,V> temp(key,V());
+
+    if (!buckets[index].remove(temp))
     {
         std::cout << "Key Does not exist";
         return;
     }
-    if (buckets[index] == cur)
-    {
-        buckets[index] = cur->next;
-    }
-    else
-    {
-        HashNode<K,V>* prev = buckets[index];
-        while (prev->next != cur)
-        {
-            prev = prev->next;
-        }
-        prev->next = cur->next;
-    }
 
-    cur->next = NULL;
-    cur->~HashNode<K,V>();
-    free(cur);
     size--;
+    loadFactor = static_cast<float>(size) / capacity;
 }
 template<typename K, typename V>
 HashMap<K, V>& HashMap<K, V>::operator=(const HashMap<K, V>& other)
@@ -259,39 +264,27 @@ HashMap<K, V>& HashMap<K, V>::operator=(const HashMap<K, V>& other)
     {
         return *this;
     }
-    for (int i = 0; i < capacity; i++)
-    {
-        HashNode<K, V>* cur = buckets[i];
-
-        while (cur)
-        {
-            HashNode<K, V>* next = cur->next;
-            cur->~HashNode<K, V>();
-            free(cur);
-            cur = next;
-        }
-    }
 
     capacity = other.capacity;
     size = 0;
     threshold = other.threshold;
-    loadFactor = other.loadFactor;
+    loadFactor = 0.0f;
     hasher = other.hasher;
-    buckets = DynamicArray<HashNode<K,V>*>(capacity);
+
+    buckets = DynamicArray<LinkedList<HashNode<K,V>>>(capacity);
 
     for (int i = 0; i < capacity; i++)
     {
-        buckets.append(NULL);
+        buckets.append(LinkedList<HashNode<K,V>>());
     }
 
-    // Deep copy all nodes
     for (int i = 0; i < other.capacity; i++)
     {
-        HashNode<K,V>* cur = other.buckets[i];
+        Node<HashNode<K,V>>* cur = other.buckets[i].getHead();
 
         while (cur)
         {
-            set(cur->key, cur->value);
+            set(cur->value.key, cur->value.value);
             cur = cur->next;
         }
     }
@@ -299,36 +292,28 @@ HashMap<K, V>& HashMap<K, V>::operator=(const HashMap<K, V>& other)
     return *this;
 }
 template<typename K, typename V>
-V& HashMap<K,V> :: get(const K& key){
-    size_t index = hasher(key) % capacity;
-    HashNode<K,V> *cur = find(buckets[index],key);
-    if(!cur){
+V& HashMap<K,V>::get(const K& key)
+{
+    int index = hasher(key) % capacity;
+
+    HashNode<K,V> temp(key);
+
+    Node<HashNode<K,V>>* node =
+        buckets[index].findNode(temp);
+
+    if (node == NULL)
+    {
         throw std::out_of_range("Key not found");
     }
-    return cur->value;
 
+    return node->value.value;
 }
 template<typename K, typename V>
-HashNode<K,V>* HashMap<K, V> ::find(HashNode<K,V>* head,const K &key){
-    if(head == NULL){
-        return NULL;
-    }
-    HashNode<K,V>* temp = head;
-    while(temp){
-        if(temp->key == key){
-            return temp;
-        }
-        temp = temp->next;
-    }
-    return NULL;
-
-}
-template<typename K, typename V>
-bool HashMap<K, V> ::exists(const K& key) {
-    size_t hashValue = hasher(key);
-    int bucketIndex = hashValue % capacity;
-
-    return find(buckets[bucketIndex], key) != NULL;
+bool HashMap<K, V>::exists(const K& key)
+{
+    int bucketIndex = hasher(key) % capacity;
+    HashNode<K,V> temp(key, V());
+    return buckets[bucketIndex].findNode(temp) != NULL;
 }
 template<typename K, typename V>
 int HashMap<K, V>:: getSize() const{

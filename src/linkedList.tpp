@@ -283,3 +283,42 @@ Node<T>* LinkedList<T>::findNode(const T& value)
 
     return NULL;
 }
+
+template<typename T>
+bool LinkedList<T>::remove(const T& value)
+{
+    Node<T>* cur = findNode(value);
+
+    if (cur == nullptr)
+        return false;
+
+    if (head == tail)
+    {
+        head = tail = nullptr;
+    }
+    else if (cur == head)
+    {
+        head = head->next;
+        head->prev = nullptr;
+    }
+    else if (cur == tail)
+    {
+        tail = tail->prev;
+        tail->next = nullptr;
+    }
+    else
+    {
+        cur->prev->next = cur->next;
+        cur->next->prev = cur->prev;
+    }
+
+    cur->prev = nullptr;
+    cur->next = nullptr;
+
+    cur->~Node<T>();
+    free(cur);
+
+    length--;
+
+    return true;
+}

@@ -47,7 +47,8 @@ public:
 
     
     bool search(T value);
-    Node<T>* LinkedList<T>::findNode(const T& value);
+    Node<T>* findNode(const T& value);
+    bool remove(const T& value);
 
     int size();
     void printForeward();

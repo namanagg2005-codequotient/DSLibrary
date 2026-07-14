@@ -69,12 +69,12 @@ These decisions ensure that the implementation remains generic, modular, extensi
 
 ## Section 4 — Code Reference
 
-**First Commit Hash:**  ```26bac7e25e2d2ba0101ce2d8429090789e7d691e```
-**Second Commit Hash:** ```480086ee1351d09d20e2cf754b33fb520be3ba42```
-**Third Commit Hash:** ```286a5e0849f0834ede708c9c50f91988bd6453c6```
-**Fourth Commit Hash:** ```29493aaa2425914ccf1b18413cd4e7b06408b014```
-**Fifth Commit Hash:** ```a801d5df3d92aa50c15aff6d80b52eaa78c1fc1c```
-**sixth Commit Hash:** ```9cbc2b20c43174664136609ba7b04dc18815725f```
+**First Commit Hash:**  ```26bac7e25e2d2ba0101ce2d8429090789e7d691e```<br>
+**Second Commit Hash:** ```480086ee1351d09d20e2cf754b33fb520be3ba42```<br>
+**Third Commit Hash:** ```286a5e0849f0834ede708c9c50f91988bd6453c6```<br>
+**Fourth Commit Hash:** ```29493aaa2425914ccf1b18413cd4e7b06408b014```<br>
+**Fifth Commit Hash:** ```a801d5df3d92aa50c15aff6d80b52eaa78c1fc1c```<br>
+**sixth Commit Hash:** ```9cbc2b20c43174664136609ba7b04dc18815725f```<br>
 
 **Files Modified:**
 

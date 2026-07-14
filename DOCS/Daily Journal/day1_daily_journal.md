@@ -37,11 +37,11 @@ The diagram should illustrate:
 
 ## Section 4 — Code Reference
 
-**Commit Hash:** `1bb92840ccaf90c529cf7eeca724c3afca4ea461`
-**Commit Hash:** `2e93767db8a756f354a055cf3cd68a77da8c3937`
-**Commit Hash:** `9729440197589fb721d09c05a4f78e5d60482456`
-**Commit Hash:** `fbdf79541a859e4c7f95da7d959755c98ad0e4de`
-**Commit Hash:** `8f3ff9995744665aa3960e8810b1e659341872ff`
+**Commit Hash:** `1bb92840ccaf90c529cf7eeca724c3afca4ea461`<br>
+**Commit Hash:** `2e93767db8a756f354a055cf3cd68a77da8c3937`<br>
+**Commit Hash:** `9729440197589fb721d09c05a4f78e5d60482456`<br>
+**Commit Hash:** `fbdf79541a859e4c7f95da7d959755c98ad0e4de`<br>
+**Commit Hash:** `8f3ff9995744665aa3960e8810b1e659341872ff`<br>
 
 **Files Referenced:**
 - `dynamic_array_design_proposal.md`

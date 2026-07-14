@@ -29,19 +29,19 @@ To solve this, I redesigned the hashing mechanism using **template specializatio
 
 ## Section 4 — Code Reference
 
-**Commit Hash** : ```2f4924103052cd39fb0c4767afa4c0f064bfabd5```
-**Commit Hash** : ```5556a552295cc3c77bacc3afcc3b08d762c39b72```
-**Commit Hash** : ```44305bbe9e3d59b921638b4bb17e90e0dac4bd9f```
-**Commit Hash** : ```fa4fd485805dbdfa6046f011ea0ca0c47b560473```
-**Commit Hash** : ```62e275150ebecbd4327e3ac299692db0ac8089c9```
-**Commit Hash** : ```36e70bc1f9f01db1d885e3b40267da10617cdce2```
-**Commit Hash** : ```6b0ceaa9a07be0429388a5bce3bba761a66f4180```
-**Commit Hash** : ```02fdd98c37aee74330e9cccf4c8b2d60a3df1893```
-**Commit Hash** : ```83a95768807aa13732f5080138c790f3ef099184```
-**Commit Hash** : ```cd108c5dbbd8e357be2a5d3ba665d5a18df516f0```
-**Commit Hash** : ```632f26e0d888ce6199050773f66e440e9f793dfb```
-**Commit Hash** : ```99cb33d03380a5a38858be00bcd672de6f9c879a```
-**Commit Hash** : ```faf7296cb9ef9f77d60c52e80dc3be4fd2bda867```
+**Commit Hash** : ```2f4924103052cd39fb0c4767afa4c0f064bfabd5```<br>
+**Commit Hash** : ```5556a552295cc3c77bacc3afcc3b08d762c39b72```<br>
+**Commit Hash** : ```44305bbe9e3d59b921638b4bb17e90e0dac4bd9f```<br>
+**Commit Hash** : ```fa4fd485805dbdfa6046f011ea0ca0c47b560473```<br>
+**Commit Hash** : ```62e275150ebecbd4327e3ac299692db0ac8089c9```<br>
+**Commit Hash** : ```36e70bc1f9f01db1d885e3b40267da10617cdce2```<br>
+**Commit Hash** : ```6b0ceaa9a07be0429388a5bce3bba761a66f4180```<br>
+**Commit Hash** : ```02fdd98c37aee74330e9cccf4c8b2d60a3df1893```<br>
+**Commit Hash** : ```83a95768807aa13732f5080138c790f3ef099184```<br>
+**Commit Hash** : ```cd108c5dbbd8e357be2a5d3ba665d5a18df516f0```<br>
+**Commit Hash** : ```632f26e0d888ce6199050773f66e440e9f793dfb```<br>
+**Commit Hash** : ```99cb33d03380a5a38858be00bcd672de6f9c879a```<br>
+**Commit Hash** : ```faf7296cb9ef9f77d60c52e80dc3be4fd2bda867```<br>
 
 **Files Modified**
 

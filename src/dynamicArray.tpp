@@ -138,7 +138,7 @@ void DynamicArray<T>::append(T value)
     if (size == capacity)
         resize();
 
-    ptr[size] = value;
+    new (&ptr[size]) T(value);   
     size++;
 }
 

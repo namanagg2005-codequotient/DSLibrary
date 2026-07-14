@@ -50,8 +50,8 @@ This corrected the implementation and made the dynamic array capable of handling
 
 ## Section 4 — Code Reference
 
-**Commit Hash:**  `44e1177c09e01d5421980a9e85bf1285124d3233`
-**Commit Hash:**  `eeb246c7c132e5f96d6160166b0991e4b4f3e29b`
+**Commit Hash:**  `44e1177c09e01d5421980a9e85bf1285124d3233`<br>
+**Commit Hash:**  `eeb246c7c132e5f96d6160166b0991e4b4f3e29b`<br>
 
 **Files Modified:**
 
