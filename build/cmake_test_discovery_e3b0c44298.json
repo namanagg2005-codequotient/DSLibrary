@@ -1,7 +1,288 @@
 {
-  "tests": 29,
+  "tests": 72,
   "name": "AllTests",
   "testsuites": [
+    {
+      "name": "LinkedListSizeTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "EmptyList",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListSizeTest.cpp",
+          "line": 4
+        },
+        {
+          "name": "AfterInsertAndDeleteOperations",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListSizeTest.cpp",
+          "line": 11
+        }
+      ]
+    },
+    {
+      "name": "LinkedListSearchTest",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "SearchExistingElement",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListSearchTest.cpp",
+          "line": 4
+        },
+        {
+          "name": "SearchNonExistingElement",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListSearchTest.cpp",
+          "line": 15
+        },
+        {
+          "name": "SearchInEmptyList",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListSearchTest.cpp",
+          "line": 26
+        },
+        {
+          "name": "SearchAfterDeletion",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListSearchTest.cpp",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "name": "LinkedListRemoveTest",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "RemoveHead",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListRemoveTest.cpp",
+          "line": 4
+        },
+        {
+          "name": "RemoveMiddle",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListRemoveTest.cpp",
+          "line": 19
+        },
+        {
+          "name": "RemoveTail",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListRemoveTest.cpp",
+          "line": 35
+        },
+        {
+          "name": "RemoveOnlyNode",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListRemoveTest.cpp",
+          "line": 51
+        },
+        {
+          "name": "RemoveNonExistingNode",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListRemoveTest.cpp",
+          "line": 64
+        }
+      ]
+    },
+    {
+      "name": "LinkedListInsertTest",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "InsertAtBeginning",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListInsertTest.cpp",
+          "line": 4
+        },
+        {
+          "name": "InsertInMiddle",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListInsertTest.cpp",
+          "line": 19
+        },
+        {
+          "name": "InsertAtEnd",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListInsertTest.cpp",
+          "line": 34
+        },
+        {
+          "name": "InsertInvalidIndex",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListInsertTest.cpp",
+          "line": 48
+        }
+      ]
+    },
+    {
+      "name": "LinkedListInsertFrontTest",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "InsertIntoEmptyList",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListInsertFrontTest.cpp",
+          "line": 4
+        },
+        {
+          "name": "InsertMultipleElements",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListInsertFrontTest.cpp",
+          "line": 21
+        },
+        {
+          "name": "HeadUpdatedCorrectly",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListInsertFrontTest.cpp",
+          "line": 39
+        },
+        {
+          "name": "TailRemainsUnchanged",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListInsertFrontTest.cpp",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "name": "LinkedListInsertBackTest",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "InsertIntoEmptyList",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListInsertBackTest.cpp",
+          "line": 4
+        },
+        {
+          "name": "InsertMultipleElements",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListInsertBackTest.cpp",
+          "line": 15
+        },
+        {
+          "name": "TailUpdatedCorrectly",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListInsertBackTest.cpp",
+          "line": 29
+        },
+        {
+          "name": "HeadRemainsUnchanged",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListInsertBackTest.cpp",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "name": "LinkedListGetTailTest",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "EmptyList",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListGetTailTest.cpp",
+          "line": 4
+        },
+        {
+          "name": "SingleElement",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListGetTailTest.cpp",
+          "line": 11
+        },
+        {
+          "name": "MultipleElements",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListGetTailTest.cpp",
+          "line": 21
+        },
+        {
+          "name": "AfterDeletingTail",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListGetTailTest.cpp",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "name": "LinkedListGetHeadTest",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "EmptyList",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListGetHeadTest.cpp",
+          "line": 4
+        },
+        {
+          "name": "SingleElement",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListGetHeadTest.cpp",
+          "line": 11
+        },
+        {
+          "name": "MultipleElements",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListGetHeadTest.cpp",
+          "line": 21
+        },
+        {
+          "name": "AfterDeletingHead",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListGetHeadTest.cpp",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "name": "LinkedListFindNodeTest",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "FindHeadNode",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListFIndNodeTest.cpp",
+          "line": 4
+        },
+        {
+          "name": "FindMiddleNode",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListFIndNodeTest.cpp",
+          "line": 19
+        },
+        {
+          "name": "FindTailNode",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListFIndNodeTest.cpp",
+          "line": 35
+        },
+        {
+          "name": "FindNonExistingNode",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListFIndNodeTest.cpp",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "name": "LinkedListDeleteFrontTest",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "DeleteFromSingleElementList",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListDeleteFront.cpp",
+          "line": 4
+        },
+        {
+          "name": "DeleteFromMultipleElementList",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListDeleteFront.cpp",
+          "line": 17
+        },
+        {
+          "name": "DeleteUntilEmpty",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListDeleteFront.cpp",
+          "line": 39
+        },
+        {
+          "name": "DeleteFromEmptyList",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListDeleteFront.cpp",
+          "line": 54
+        }
+      ]
+    },
+    {
+      "name": "LinkedListDeleteBackTest",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "DeleteFromSingleElementList",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListDeleteBack.cpp",
+          "line": 4
+        },
+        {
+          "name": "DeleteFromMultipleElementList",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListDeleteBack.cpp",
+          "line": 17
+        },
+        {
+          "name": "DeleteUntilEmpty",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListDeleteBack.cpp",
+          "line": 40
+        },
+        {
+          "name": "DeleteFromEmptyList",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\linkedListDeleteBack.cpp",
+          "line": 55
+        }
+      ]
+    },
     {
       "name": "DynamicArrayTest",
       "tests": 29,

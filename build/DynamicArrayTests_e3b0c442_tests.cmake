@@ -1,3 +1,390 @@
+add_test([=[LinkedListSizeTest.EmptyList]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListSizeTest.EmptyList]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListSizeTest.EmptyList]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListSizeTest.cpp:4]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListSizeTest.AfterInsertAndDeleteOperations]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListSizeTest.AfterInsertAndDeleteOperations]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListSizeTest.AfterInsertAndDeleteOperations]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListSizeTest.cpp:11]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListSearchTest.SearchExistingElement]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListSearchTest.SearchExistingElement]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListSearchTest.SearchExistingElement]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListSearchTest.cpp:4]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListSearchTest.SearchNonExistingElement]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListSearchTest.SearchNonExistingElement]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListSearchTest.SearchNonExistingElement]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListSearchTest.cpp:15]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListSearchTest.SearchInEmptyList]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListSearchTest.SearchInEmptyList]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListSearchTest.SearchInEmptyList]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListSearchTest.cpp:26]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListSearchTest.SearchAfterDeletion]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListSearchTest.SearchAfterDeletion]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListSearchTest.SearchAfterDeletion]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListSearchTest.cpp:33]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListRemoveTest.RemoveHead]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListRemoveTest.RemoveHead]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListRemoveTest.RemoveHead]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListRemoveTest.cpp:4]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListRemoveTest.RemoveMiddle]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListRemoveTest.RemoveMiddle]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListRemoveTest.RemoveMiddle]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListRemoveTest.cpp:19]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListRemoveTest.RemoveTail]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListRemoveTest.RemoveTail]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListRemoveTest.RemoveTail]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListRemoveTest.cpp:35]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListRemoveTest.RemoveOnlyNode]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListRemoveTest.RemoveOnlyNode]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListRemoveTest.RemoveOnlyNode]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListRemoveTest.cpp:51]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListRemoveTest.RemoveNonExistingNode]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListRemoveTest.RemoveNonExistingNode]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListRemoveTest.RemoveNonExistingNode]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListRemoveTest.cpp:64]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListInsertTest.InsertAtBeginning]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListInsertTest.InsertAtBeginning]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListInsertTest.InsertAtBeginning]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListInsertTest.cpp:4]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListInsertTest.InsertInMiddle]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListInsertTest.InsertInMiddle]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListInsertTest.InsertInMiddle]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListInsertTest.cpp:19]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListInsertTest.InsertAtEnd]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListInsertTest.InsertAtEnd]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListInsertTest.InsertAtEnd]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListInsertTest.cpp:34]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListInsertTest.InsertInvalidIndex]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListInsertTest.InsertInvalidIndex]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListInsertTest.InsertInvalidIndex]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListInsertTest.cpp:48]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListInsertFrontTest.InsertIntoEmptyList]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListInsertFrontTest.InsertIntoEmptyList]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListInsertFrontTest.InsertIntoEmptyList]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListInsertFrontTest.cpp:4]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListInsertFrontTest.InsertMultipleElements]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListInsertFrontTest.InsertMultipleElements]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListInsertFrontTest.InsertMultipleElements]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListInsertFrontTest.cpp:21]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListInsertFrontTest.HeadUpdatedCorrectly]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListInsertFrontTest.HeadUpdatedCorrectly]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListInsertFrontTest.HeadUpdatedCorrectly]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListInsertFrontTest.cpp:39]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListInsertFrontTest.TailRemainsUnchanged]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListInsertFrontTest.TailRemainsUnchanged]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListInsertFrontTest.TailRemainsUnchanged]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListInsertFrontTest.cpp:53]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListInsertBackTest.InsertIntoEmptyList]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListInsertBackTest.InsertIntoEmptyList]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListInsertBackTest.InsertIntoEmptyList]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListInsertBackTest.cpp:4]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListInsertBackTest.InsertMultipleElements]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListInsertBackTest.InsertMultipleElements]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListInsertBackTest.InsertMultipleElements]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListInsertBackTest.cpp:15]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListInsertBackTest.TailUpdatedCorrectly]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListInsertBackTest.TailUpdatedCorrectly]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListInsertBackTest.TailUpdatedCorrectly]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListInsertBackTest.cpp:29]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListInsertBackTest.HeadRemainsUnchanged]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListInsertBackTest.HeadRemainsUnchanged]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListInsertBackTest.HeadRemainsUnchanged]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListInsertBackTest.cpp:41]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListGetTailTest.EmptyList]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListGetTailTest.EmptyList]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListGetTailTest.EmptyList]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListGetTailTest.cpp:4]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListGetTailTest.SingleElement]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListGetTailTest.SingleElement]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListGetTailTest.SingleElement]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListGetTailTest.cpp:11]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListGetTailTest.MultipleElements]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListGetTailTest.MultipleElements]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListGetTailTest.MultipleElements]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListGetTailTest.cpp:21]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListGetTailTest.AfterDeletingTail]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListGetTailTest.AfterDeletingTail]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListGetTailTest.AfterDeletingTail]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListGetTailTest.cpp:33]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListGetHeadTest.EmptyList]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListGetHeadTest.EmptyList]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListGetHeadTest.EmptyList]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListGetHeadTest.cpp:4]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListGetHeadTest.SingleElement]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListGetHeadTest.SingleElement]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListGetHeadTest.SingleElement]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListGetHeadTest.cpp:11]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListGetHeadTest.MultipleElements]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListGetHeadTest.MultipleElements]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListGetHeadTest.MultipleElements]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListGetHeadTest.cpp:21]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListGetHeadTest.AfterDeletingHead]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListGetHeadTest.AfterDeletingHead]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListGetHeadTest.AfterDeletingHead]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListGetHeadTest.cpp:33]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListFindNodeTest.FindHeadNode]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListFindNodeTest.FindHeadNode]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListFindNodeTest.FindHeadNode]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListFIndNodeTest.cpp:4]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListFindNodeTest.FindMiddleNode]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListFindNodeTest.FindMiddleNode]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListFindNodeTest.FindMiddleNode]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListFIndNodeTest.cpp:19]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListFindNodeTest.FindTailNode]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListFindNodeTest.FindTailNode]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListFindNodeTest.FindTailNode]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListFIndNodeTest.cpp:35]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListFindNodeTest.FindNonExistingNode]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListFindNodeTest.FindNonExistingNode]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListFindNodeTest.FindNonExistingNode]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListFIndNodeTest.cpp:50]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListDeleteFrontTest.DeleteFromSingleElementList]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListDeleteFrontTest.DeleteFromSingleElementList]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListDeleteFrontTest.DeleteFromSingleElementList]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListDeleteFront.cpp:4]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListDeleteFrontTest.DeleteFromMultipleElementList]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListDeleteFrontTest.DeleteFromMultipleElementList]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListDeleteFrontTest.DeleteFromMultipleElementList]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListDeleteFront.cpp:17]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListDeleteFrontTest.DeleteUntilEmpty]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListDeleteFrontTest.DeleteUntilEmpty]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListDeleteFrontTest.DeleteUntilEmpty]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListDeleteFront.cpp:39]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListDeleteFrontTest.DeleteFromEmptyList]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListDeleteFrontTest.DeleteFromEmptyList]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListDeleteFrontTest.DeleteFromEmptyList]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListDeleteFront.cpp:54]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListDeleteBackTest.DeleteFromSingleElementList]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListDeleteBackTest.DeleteFromSingleElementList]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListDeleteBackTest.DeleteFromSingleElementList]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListDeleteBack.cpp:4]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListDeleteBackTest.DeleteFromMultipleElementList]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListDeleteBackTest.DeleteFromMultipleElementList]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListDeleteBackTest.DeleteFromMultipleElementList]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListDeleteBack.cpp:17]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListDeleteBackTest.DeleteUntilEmpty]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListDeleteBackTest.DeleteUntilEmpty]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListDeleteBackTest.DeleteUntilEmpty]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListDeleteBack.cpp:40]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[LinkedListDeleteBackTest.DeleteFromEmptyList]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=LinkedListDeleteBackTest.DeleteFromEmptyList]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LinkedListDeleteBackTest.DeleteFromEmptyList]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\linkedListDeleteBack.cpp:55]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
 add_test([=[DynamicArrayTest.RemoveFrontString]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=DynamicArrayTest.RemoveFrontString]==] --gtest_also_run_disabled_tests)
 set_tests_properties([=[DynamicArrayTest.RemoveFrontString]=]
   PROPERTIES
@@ -259,4 +646,4 @@ set_tests_properties([=[DynamicArrayTest.AppendTriggersResize]=]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
 )
-set(DynamicArrayTests_TESTS [==[DynamicArrayTest.RemoveFrontString]==] [==[DynamicArrayTest.RemoveMiddleString]==] [==[DynamicArrayTest.RemoveBackString]==] [==[DynamicArrayTest.RemoveSingleElementString]==] [==[DynamicArrayTest.RemoveInvalidIndexString]==] [==[DynamicArrayTest.InsertFrontString]==] [==[DynamicArrayTest.InsertMiddleString]==] [==[DynamicArrayTest.InsertBackString]==] [==[DynamicArrayTest.InsertIntoEmptyArray]==] [==[DynamicArrayTest.InsertTriggersResize]==] [==[DynamicArrayTest.InsertInvalidPositiveIndex]==] [==[DynamicArrayTest.InsertNegativeIndex]==] [==[DynamicArrayTest.GetFirstString]==] [==[DynamicArrayTest.GetMiddleString]==] [==[DynamicArrayTest.GetLastString]==] [==[DynamicArrayTest.GetInvalidPositiveIndex]==] [==[DynamicArrayTest.GetNegativeIndex]==] [==[DynamicArrayTest.GetSizeEmptyArray]==] [==[DynamicArrayTest.GetSizeAfterAppend]==] [==[DynamicArrayTest.GetSizeAfterInsert]==] [==[DynamicArrayTest.GetSizeAfterRemove]==] [==[DynamicArrayTest.GetCapacityDefaultConstructor]==] [==[DynamicArrayTest.GetCapacityParameterizedConstructor]==] [==[DynamicArrayTest.GetCapacityAfterSingleResize]==] [==[DynamicArrayTest.GetCapacityAfterMultipleResizes]==] [==[DynamicArrayTest.AppendSingleString]==] [==[DynamicArrayTest.AppendMultipleStrings]==] [==[DynamicArrayTest.AppendDuplicateStrings]==] [==[DynamicArrayTest.AppendTriggersResize]==])
+set(DynamicArrayTests_TESTS [==[LinkedListSizeTest.EmptyList]==] [==[LinkedListSizeTest.AfterInsertAndDeleteOperations]==] [==[LinkedListSearchTest.SearchExistingElement]==] [==[LinkedListSearchTest.SearchNonExistingElement]==] [==[LinkedListSearchTest.SearchInEmptyList]==] [==[LinkedListSearchTest.SearchAfterDeletion]==] [==[LinkedListRemoveTest.RemoveHead]==] [==[LinkedListRemoveTest.RemoveMiddle]==] [==[LinkedListRemoveTest.RemoveTail]==] [==[LinkedListRemoveTest.RemoveOnlyNode]==] [==[LinkedListRemoveTest.RemoveNonExistingNode]==] [==[LinkedListInsertTest.InsertAtBeginning]==] [==[LinkedListInsertTest.InsertInMiddle]==] [==[LinkedListInsertTest.InsertAtEnd]==] [==[LinkedListInsertTest.InsertInvalidIndex]==] [==[LinkedListInsertFrontTest.InsertIntoEmptyList]==] [==[LinkedListInsertFrontTest.InsertMultipleElements]==] [==[LinkedListInsertFrontTest.HeadUpdatedCorrectly]==] [==[LinkedListInsertFrontTest.TailRemainsUnchanged]==] [==[LinkedListInsertBackTest.InsertIntoEmptyList]==] [==[LinkedListInsertBackTest.InsertMultipleElements]==] [==[LinkedListInsertBackTest.TailUpdatedCorrectly]==] [==[LinkedListInsertBackTest.HeadRemainsUnchanged]==] [==[LinkedListGetTailTest.EmptyList]==] [==[LinkedListGetTailTest.SingleElement]==] [==[LinkedListGetTailTest.MultipleElements]==] [==[LinkedListGetTailTest.AfterDeletingTail]==] [==[LinkedListGetHeadTest.EmptyList]==] [==[LinkedListGetHeadTest.SingleElement]==] [==[LinkedListGetHeadTest.MultipleElements]==] [==[LinkedListGetHeadTest.AfterDeletingHead]==] [==[LinkedListFindNodeTest.FindHeadNode]==] [==[LinkedListFindNodeTest.FindMiddleNode]==] [==[LinkedListFindNodeTest.FindTailNode]==] [==[LinkedListFindNodeTest.FindNonExistingNode]==] [==[LinkedListDeleteFrontTest.DeleteFromSingleElementList]==] [==[LinkedListDeleteFrontTest.DeleteFromMultipleElementList]==] [==[LinkedListDeleteFrontTest.DeleteUntilEmpty]==] [==[LinkedListDeleteFrontTest.DeleteFromEmptyList]==] [==[LinkedListDeleteBackTest.DeleteFromSingleElementList]==] [==[LinkedListDeleteBackTest.DeleteFromMultipleElementList]==] [==[LinkedListDeleteBackTest.DeleteUntilEmpty]==] [==[LinkedListDeleteBackTest.DeleteFromEmptyList]==] [==[DynamicArrayTest.RemoveFrontString]==] [==[DynamicArrayTest.RemoveMiddleString]==] [==[DynamicArrayTest.RemoveBackString]==] [==[DynamicArrayTest.RemoveSingleElementString]==] [==[DynamicArrayTest.RemoveInvalidIndexString]==] [==[DynamicArrayTest.InsertFrontString]==] [==[DynamicArrayTest.InsertMiddleString]==] [==[DynamicArrayTest.InsertBackString]==] [==[DynamicArrayTest.InsertIntoEmptyArray]==] [==[DynamicArrayTest.InsertTriggersResize]==] [==[DynamicArrayTest.InsertInvalidPositiveIndex]==] [==[DynamicArrayTest.InsertNegativeIndex]==] [==[DynamicArrayTest.GetFirstString]==] [==[DynamicArrayTest.GetMiddleString]==] [==[DynamicArrayTest.GetLastString]==] [==[DynamicArrayTest.GetInvalidPositiveIndex]==] [==[DynamicArrayTest.GetNegativeIndex]==] [==[DynamicArrayTest.GetSizeEmptyArray]==] [==[DynamicArrayTest.GetSizeAfterAppend]==] [==[DynamicArrayTest.GetSizeAfterInsert]==] [==[DynamicArrayTest.GetSizeAfterRemove]==] [==[DynamicArrayTest.GetCapacityDefaultConstructor]==] [==[DynamicArrayTest.GetCapacityParameterizedConstructor]==] [==[DynamicArrayTest.GetCapacityAfterSingleResize]==] [==[DynamicArrayTest.GetCapacityAfterMultipleResizes]==] [==[DynamicArrayTest.AppendSingleString]==] [==[DynamicArrayTest.AppendMultipleStrings]==] [==[DynamicArrayTest.AppendDuplicateStrings]==] [==[DynamicArrayTest.AppendTriggersResize]==])

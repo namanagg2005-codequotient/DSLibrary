@@ -217,7 +217,7 @@ void LinkedList<T> ::printForeward(){
 template<typename T>
 void LinkedList<T> ::printBackward(){
     Node<T>* temp = tail;
-    while(temp->next){
+    while(temp->prev){
         std::cout<<temp->value <<"<->";
         temp = temp->prev;
     }

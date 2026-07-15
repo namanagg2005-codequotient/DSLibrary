@@ -416,6 +416,78 @@ tests/dynamicArrayRemoveTest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/dynamicArrayRemoveTest.cpp.s
 .PHONY : tests/dynamicArrayRemoveTest.cpp.s
 
+tests/linkedListDeleteBack.obj: tests/linkedListDeleteBack.cpp.obj
+.PHONY : tests/linkedListDeleteBack.obj
+
+# target to build an object file
+tests/linkedListDeleteBack.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListDeleteBack.cpp.obj
+.PHONY : tests/linkedListDeleteBack.cpp.obj
+
+tests/linkedListDeleteBack.i: tests/linkedListDeleteBack.cpp.i
+.PHONY : tests/linkedListDeleteBack.i
+
+# target to preprocess a source file
+tests/linkedListDeleteBack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListDeleteBack.cpp.i
+.PHONY : tests/linkedListDeleteBack.cpp.i
+
+tests/linkedListDeleteBack.s: tests/linkedListDeleteBack.cpp.s
+.PHONY : tests/linkedListDeleteBack.s
+
+# target to generate assembly for a file
+tests/linkedListDeleteBack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListDeleteBack.cpp.s
+.PHONY : tests/linkedListDeleteBack.cpp.s
+
+tests/linkedListDeleteFront.obj: tests/linkedListDeleteFront.cpp.obj
+.PHONY : tests/linkedListDeleteFront.obj
+
+# target to build an object file
+tests/linkedListDeleteFront.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListDeleteFront.cpp.obj
+.PHONY : tests/linkedListDeleteFront.cpp.obj
+
+tests/linkedListDeleteFront.i: tests/linkedListDeleteFront.cpp.i
+.PHONY : tests/linkedListDeleteFront.i
+
+# target to preprocess a source file
+tests/linkedListDeleteFront.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListDeleteFront.cpp.i
+.PHONY : tests/linkedListDeleteFront.cpp.i
+
+tests/linkedListDeleteFront.s: tests/linkedListDeleteFront.cpp.s
+.PHONY : tests/linkedListDeleteFront.s
+
+# target to generate assembly for a file
+tests/linkedListDeleteFront.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListDeleteFront.cpp.s
+.PHONY : tests/linkedListDeleteFront.cpp.s
+
+tests/linkedListFIndNodeTest.obj: tests/linkedListFIndNodeTest.cpp.obj
+.PHONY : tests/linkedListFIndNodeTest.obj
+
+# target to build an object file
+tests/linkedListFIndNodeTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListFIndNodeTest.cpp.obj
+.PHONY : tests/linkedListFIndNodeTest.cpp.obj
+
+tests/linkedListFIndNodeTest.i: tests/linkedListFIndNodeTest.cpp.i
+.PHONY : tests/linkedListFIndNodeTest.i
+
+# target to preprocess a source file
+tests/linkedListFIndNodeTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListFIndNodeTest.cpp.i
+.PHONY : tests/linkedListFIndNodeTest.cpp.i
+
+tests/linkedListFIndNodeTest.s: tests/linkedListFIndNodeTest.cpp.s
+.PHONY : tests/linkedListFIndNodeTest.s
+
+# target to generate assembly for a file
+tests/linkedListFIndNodeTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListFIndNodeTest.cpp.s
+.PHONY : tests/linkedListFIndNodeTest.cpp.s
+
 tests/linkedListGetHeadTest.obj: tests/linkedListGetHeadTest.cpp.obj
 .PHONY : tests/linkedListGetHeadTest.obj
 
@@ -439,6 +511,174 @@ tests/linkedListGetHeadTest.s: tests/linkedListGetHeadTest.cpp.s
 tests/linkedListGetHeadTest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListGetHeadTest.cpp.s
 .PHONY : tests/linkedListGetHeadTest.cpp.s
+
+tests/linkedListGetTailTest.obj: tests/linkedListGetTailTest.cpp.obj
+.PHONY : tests/linkedListGetTailTest.obj
+
+# target to build an object file
+tests/linkedListGetTailTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListGetTailTest.cpp.obj
+.PHONY : tests/linkedListGetTailTest.cpp.obj
+
+tests/linkedListGetTailTest.i: tests/linkedListGetTailTest.cpp.i
+.PHONY : tests/linkedListGetTailTest.i
+
+# target to preprocess a source file
+tests/linkedListGetTailTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListGetTailTest.cpp.i
+.PHONY : tests/linkedListGetTailTest.cpp.i
+
+tests/linkedListGetTailTest.s: tests/linkedListGetTailTest.cpp.s
+.PHONY : tests/linkedListGetTailTest.s
+
+# target to generate assembly for a file
+tests/linkedListGetTailTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListGetTailTest.cpp.s
+.PHONY : tests/linkedListGetTailTest.cpp.s
+
+tests/linkedListInsertBackTest.obj: tests/linkedListInsertBackTest.cpp.obj
+.PHONY : tests/linkedListInsertBackTest.obj
+
+# target to build an object file
+tests/linkedListInsertBackTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListInsertBackTest.cpp.obj
+.PHONY : tests/linkedListInsertBackTest.cpp.obj
+
+tests/linkedListInsertBackTest.i: tests/linkedListInsertBackTest.cpp.i
+.PHONY : tests/linkedListInsertBackTest.i
+
+# target to preprocess a source file
+tests/linkedListInsertBackTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListInsertBackTest.cpp.i
+.PHONY : tests/linkedListInsertBackTest.cpp.i
+
+tests/linkedListInsertBackTest.s: tests/linkedListInsertBackTest.cpp.s
+.PHONY : tests/linkedListInsertBackTest.s
+
+# target to generate assembly for a file
+tests/linkedListInsertBackTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListInsertBackTest.cpp.s
+.PHONY : tests/linkedListInsertBackTest.cpp.s
+
+tests/linkedListInsertFrontTest.obj: tests/linkedListInsertFrontTest.cpp.obj
+.PHONY : tests/linkedListInsertFrontTest.obj
+
+# target to build an object file
+tests/linkedListInsertFrontTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListInsertFrontTest.cpp.obj
+.PHONY : tests/linkedListInsertFrontTest.cpp.obj
+
+tests/linkedListInsertFrontTest.i: tests/linkedListInsertFrontTest.cpp.i
+.PHONY : tests/linkedListInsertFrontTest.i
+
+# target to preprocess a source file
+tests/linkedListInsertFrontTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListInsertFrontTest.cpp.i
+.PHONY : tests/linkedListInsertFrontTest.cpp.i
+
+tests/linkedListInsertFrontTest.s: tests/linkedListInsertFrontTest.cpp.s
+.PHONY : tests/linkedListInsertFrontTest.s
+
+# target to generate assembly for a file
+tests/linkedListInsertFrontTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListInsertFrontTest.cpp.s
+.PHONY : tests/linkedListInsertFrontTest.cpp.s
+
+tests/linkedListInsertTest.obj: tests/linkedListInsertTest.cpp.obj
+.PHONY : tests/linkedListInsertTest.obj
+
+# target to build an object file
+tests/linkedListInsertTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListInsertTest.cpp.obj
+.PHONY : tests/linkedListInsertTest.cpp.obj
+
+tests/linkedListInsertTest.i: tests/linkedListInsertTest.cpp.i
+.PHONY : tests/linkedListInsertTest.i
+
+# target to preprocess a source file
+tests/linkedListInsertTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListInsertTest.cpp.i
+.PHONY : tests/linkedListInsertTest.cpp.i
+
+tests/linkedListInsertTest.s: tests/linkedListInsertTest.cpp.s
+.PHONY : tests/linkedListInsertTest.s
+
+# target to generate assembly for a file
+tests/linkedListInsertTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListInsertTest.cpp.s
+.PHONY : tests/linkedListInsertTest.cpp.s
+
+tests/linkedListRemoveTest.obj: tests/linkedListRemoveTest.cpp.obj
+.PHONY : tests/linkedListRemoveTest.obj
+
+# target to build an object file
+tests/linkedListRemoveTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListRemoveTest.cpp.obj
+.PHONY : tests/linkedListRemoveTest.cpp.obj
+
+tests/linkedListRemoveTest.i: tests/linkedListRemoveTest.cpp.i
+.PHONY : tests/linkedListRemoveTest.i
+
+# target to preprocess a source file
+tests/linkedListRemoveTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListRemoveTest.cpp.i
+.PHONY : tests/linkedListRemoveTest.cpp.i
+
+tests/linkedListRemoveTest.s: tests/linkedListRemoveTest.cpp.s
+.PHONY : tests/linkedListRemoveTest.s
+
+# target to generate assembly for a file
+tests/linkedListRemoveTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListRemoveTest.cpp.s
+.PHONY : tests/linkedListRemoveTest.cpp.s
+
+tests/linkedListSearchTest.obj: tests/linkedListSearchTest.cpp.obj
+.PHONY : tests/linkedListSearchTest.obj
+
+# target to build an object file
+tests/linkedListSearchTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListSearchTest.cpp.obj
+.PHONY : tests/linkedListSearchTest.cpp.obj
+
+tests/linkedListSearchTest.i: tests/linkedListSearchTest.cpp.i
+.PHONY : tests/linkedListSearchTest.i
+
+# target to preprocess a source file
+tests/linkedListSearchTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListSearchTest.cpp.i
+.PHONY : tests/linkedListSearchTest.cpp.i
+
+tests/linkedListSearchTest.s: tests/linkedListSearchTest.cpp.s
+.PHONY : tests/linkedListSearchTest.s
+
+# target to generate assembly for a file
+tests/linkedListSearchTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListSearchTest.cpp.s
+.PHONY : tests/linkedListSearchTest.cpp.s
+
+tests/linkedListSizeTest.obj: tests/linkedListSizeTest.cpp.obj
+.PHONY : tests/linkedListSizeTest.obj
+
+# target to build an object file
+tests/linkedListSizeTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListSizeTest.cpp.obj
+.PHONY : tests/linkedListSizeTest.cpp.obj
+
+tests/linkedListSizeTest.i: tests/linkedListSizeTest.cpp.i
+.PHONY : tests/linkedListSizeTest.i
+
+# target to preprocess a source file
+tests/linkedListSizeTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListSizeTest.cpp.i
+.PHONY : tests/linkedListSizeTest.cpp.i
+
+tests/linkedListSizeTest.s: tests/linkedListSizeTest.cpp.s
+.PHONY : tests/linkedListSizeTest.s
+
+# target to generate assembly for a file
+tests/linkedListSizeTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListSizeTest.cpp.s
+.PHONY : tests/linkedListSizeTest.cpp.s
 
 # Help Target
 help:
@@ -480,9 +720,39 @@ help:
 	@echo ... tests/dynamicArrayRemoveTest.obj
 	@echo ... tests/dynamicArrayRemoveTest.i
 	@echo ... tests/dynamicArrayRemoveTest.s
+	@echo ... tests/linkedListDeleteBack.obj
+	@echo ... tests/linkedListDeleteBack.i
+	@echo ... tests/linkedListDeleteBack.s
+	@echo ... tests/linkedListDeleteFront.obj
+	@echo ... tests/linkedListDeleteFront.i
+	@echo ... tests/linkedListDeleteFront.s
+	@echo ... tests/linkedListFIndNodeTest.obj
+	@echo ... tests/linkedListFIndNodeTest.i
+	@echo ... tests/linkedListFIndNodeTest.s
 	@echo ... tests/linkedListGetHeadTest.obj
 	@echo ... tests/linkedListGetHeadTest.i
 	@echo ... tests/linkedListGetHeadTest.s
+	@echo ... tests/linkedListGetTailTest.obj
+	@echo ... tests/linkedListGetTailTest.i
+	@echo ... tests/linkedListGetTailTest.s
+	@echo ... tests/linkedListInsertBackTest.obj
+	@echo ... tests/linkedListInsertBackTest.i
+	@echo ... tests/linkedListInsertBackTest.s
+	@echo ... tests/linkedListInsertFrontTest.obj
+	@echo ... tests/linkedListInsertFrontTest.i
+	@echo ... tests/linkedListInsertFrontTest.s
+	@echo ... tests/linkedListInsertTest.obj
+	@echo ... tests/linkedListInsertTest.i
+	@echo ... tests/linkedListInsertTest.s
+	@echo ... tests/linkedListRemoveTest.obj
+	@echo ... tests/linkedListRemoveTest.i
+	@echo ... tests/linkedListRemoveTest.s
+	@echo ... tests/linkedListSearchTest.obj
+	@echo ... tests/linkedListSearchTest.i
+	@echo ... tests/linkedListSearchTest.s
+	@echo ... tests/linkedListSizeTest.obj
+	@echo ... tests/linkedListSizeTest.i
+	@echo ... tests/linkedListSizeTest.s
 .PHONY : help
 
 
