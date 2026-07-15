@@ -4,23 +4,31 @@ using namespace std;
 class Student
 {
 public:
-    int roll;
+    int rollNo;
     std::string name;
 
-    Student() = default;
-
-    Student(int r, std::string n)
+    Student()
     {
-        roll = r;
-        name = n;
+        rollNo = 0;
+        name = "";
+    }
+
+    Student(int rollNo, const std::string& name)
+    {
+        this->rollNo = rollNo;
+        this->name = name;
     }
 
     bool operator==(const Student& other) const
     {
-        return roll == other.roll;
+        return rollNo == other.rollNo;
+    }
+
+    size_t createHash() const
+    {
+        return Hash<int>()(rollNo);
     }
 };
-
 int main()
 {
 HashMap<Student, float> mp;

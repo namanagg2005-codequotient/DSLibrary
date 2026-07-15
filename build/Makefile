@@ -64,6 +64,16 @@ CMAKE_BINARY_DIR = C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuo
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	"C:\Program Files\CMake\bin\ctest.exe" $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -83,6 +93,51 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"gmock\" \"gtest\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	"C:\Program Files\CMake\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	"C:\Program Files\CMake\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -128,6 +183,71 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+#=============================================================================
+# Target rules for targets named DynamicArrayTests
+
+# Build rule for target.
+DynamicArrayTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 DynamicArrayTests
+.PHONY : DynamicArrayTests
+
+# fast build rule for target.
+DynamicArrayTests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/build
+.PHONY : DynamicArrayTests/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -152,6 +272,174 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+tests/dynamicArrayAppendTest.obj: tests/dynamicArrayAppendTest.cpp.obj
+.PHONY : tests/dynamicArrayAppendTest.obj
+
+# target to build an object file
+tests/dynamicArrayAppendTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/dynamicArrayAppendTest.cpp.obj
+.PHONY : tests/dynamicArrayAppendTest.cpp.obj
+
+tests/dynamicArrayAppendTest.i: tests/dynamicArrayAppendTest.cpp.i
+.PHONY : tests/dynamicArrayAppendTest.i
+
+# target to preprocess a source file
+tests/dynamicArrayAppendTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/dynamicArrayAppendTest.cpp.i
+.PHONY : tests/dynamicArrayAppendTest.cpp.i
+
+tests/dynamicArrayAppendTest.s: tests/dynamicArrayAppendTest.cpp.s
+.PHONY : tests/dynamicArrayAppendTest.s
+
+# target to generate assembly for a file
+tests/dynamicArrayAppendTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/dynamicArrayAppendTest.cpp.s
+.PHONY : tests/dynamicArrayAppendTest.cpp.s
+
+tests/dynamicArrayGetCapacity.obj: tests/dynamicArrayGetCapacity.cpp.obj
+.PHONY : tests/dynamicArrayGetCapacity.obj
+
+# target to build an object file
+tests/dynamicArrayGetCapacity.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/dynamicArrayGetCapacity.cpp.obj
+.PHONY : tests/dynamicArrayGetCapacity.cpp.obj
+
+tests/dynamicArrayGetCapacity.i: tests/dynamicArrayGetCapacity.cpp.i
+.PHONY : tests/dynamicArrayGetCapacity.i
+
+# target to preprocess a source file
+tests/dynamicArrayGetCapacity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/dynamicArrayGetCapacity.cpp.i
+.PHONY : tests/dynamicArrayGetCapacity.cpp.i
+
+tests/dynamicArrayGetCapacity.s: tests/dynamicArrayGetCapacity.cpp.s
+.PHONY : tests/dynamicArrayGetCapacity.s
+
+# target to generate assembly for a file
+tests/dynamicArrayGetCapacity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/dynamicArrayGetCapacity.cpp.s
+.PHONY : tests/dynamicArrayGetCapacity.cpp.s
+
+tests/dynamicArrayGetSizeTest.obj: tests/dynamicArrayGetSizeTest.cpp.obj
+.PHONY : tests/dynamicArrayGetSizeTest.obj
+
+# target to build an object file
+tests/dynamicArrayGetSizeTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/dynamicArrayGetSizeTest.cpp.obj
+.PHONY : tests/dynamicArrayGetSizeTest.cpp.obj
+
+tests/dynamicArrayGetSizeTest.i: tests/dynamicArrayGetSizeTest.cpp.i
+.PHONY : tests/dynamicArrayGetSizeTest.i
+
+# target to preprocess a source file
+tests/dynamicArrayGetSizeTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/dynamicArrayGetSizeTest.cpp.i
+.PHONY : tests/dynamicArrayGetSizeTest.cpp.i
+
+tests/dynamicArrayGetSizeTest.s: tests/dynamicArrayGetSizeTest.cpp.s
+.PHONY : tests/dynamicArrayGetSizeTest.s
+
+# target to generate assembly for a file
+tests/dynamicArrayGetSizeTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/dynamicArrayGetSizeTest.cpp.s
+.PHONY : tests/dynamicArrayGetSizeTest.cpp.s
+
+tests/dynamicArrayGetTest.obj: tests/dynamicArrayGetTest.cpp.obj
+.PHONY : tests/dynamicArrayGetTest.obj
+
+# target to build an object file
+tests/dynamicArrayGetTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/dynamicArrayGetTest.cpp.obj
+.PHONY : tests/dynamicArrayGetTest.cpp.obj
+
+tests/dynamicArrayGetTest.i: tests/dynamicArrayGetTest.cpp.i
+.PHONY : tests/dynamicArrayGetTest.i
+
+# target to preprocess a source file
+tests/dynamicArrayGetTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/dynamicArrayGetTest.cpp.i
+.PHONY : tests/dynamicArrayGetTest.cpp.i
+
+tests/dynamicArrayGetTest.s: tests/dynamicArrayGetTest.cpp.s
+.PHONY : tests/dynamicArrayGetTest.s
+
+# target to generate assembly for a file
+tests/dynamicArrayGetTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/dynamicArrayGetTest.cpp.s
+.PHONY : tests/dynamicArrayGetTest.cpp.s
+
+tests/dynamicArrayInsertTest.obj: tests/dynamicArrayInsertTest.cpp.obj
+.PHONY : tests/dynamicArrayInsertTest.obj
+
+# target to build an object file
+tests/dynamicArrayInsertTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/dynamicArrayInsertTest.cpp.obj
+.PHONY : tests/dynamicArrayInsertTest.cpp.obj
+
+tests/dynamicArrayInsertTest.i: tests/dynamicArrayInsertTest.cpp.i
+.PHONY : tests/dynamicArrayInsertTest.i
+
+# target to preprocess a source file
+tests/dynamicArrayInsertTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/dynamicArrayInsertTest.cpp.i
+.PHONY : tests/dynamicArrayInsertTest.cpp.i
+
+tests/dynamicArrayInsertTest.s: tests/dynamicArrayInsertTest.cpp.s
+.PHONY : tests/dynamicArrayInsertTest.s
+
+# target to generate assembly for a file
+tests/dynamicArrayInsertTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/dynamicArrayInsertTest.cpp.s
+.PHONY : tests/dynamicArrayInsertTest.cpp.s
+
+tests/dynamicArrayRemoveTest.obj: tests/dynamicArrayRemoveTest.cpp.obj
+.PHONY : tests/dynamicArrayRemoveTest.obj
+
+# target to build an object file
+tests/dynamicArrayRemoveTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/dynamicArrayRemoveTest.cpp.obj
+.PHONY : tests/dynamicArrayRemoveTest.cpp.obj
+
+tests/dynamicArrayRemoveTest.i: tests/dynamicArrayRemoveTest.cpp.i
+.PHONY : tests/dynamicArrayRemoveTest.i
+
+# target to preprocess a source file
+tests/dynamicArrayRemoveTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/dynamicArrayRemoveTest.cpp.i
+.PHONY : tests/dynamicArrayRemoveTest.cpp.i
+
+tests/dynamicArrayRemoveTest.s: tests/dynamicArrayRemoveTest.cpp.s
+.PHONY : tests/dynamicArrayRemoveTest.s
+
+# target to generate assembly for a file
+tests/dynamicArrayRemoveTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/dynamicArrayRemoveTest.cpp.s
+.PHONY : tests/dynamicArrayRemoveTest.cpp.s
+
+tests/linkedListGetHeadTest.obj: tests/linkedListGetHeadTest.cpp.obj
+.PHONY : tests/linkedListGetHeadTest.obj
+
+# target to build an object file
+tests/linkedListGetHeadTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListGetHeadTest.cpp.obj
+.PHONY : tests/linkedListGetHeadTest.cpp.obj
+
+tests/linkedListGetHeadTest.i: tests/linkedListGetHeadTest.cpp.i
+.PHONY : tests/linkedListGetHeadTest.i
+
+# target to preprocess a source file
+tests/linkedListGetHeadTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListGetHeadTest.cpp.i
+.PHONY : tests/linkedListGetHeadTest.cpp.i
+
+tests/linkedListGetHeadTest.s: tests/linkedListGetHeadTest.cpp.s
+.PHONY : tests/linkedListGetHeadTest.s
+
+# target to generate assembly for a file
+tests/linkedListGetHeadTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/linkedListGetHeadTest.cpp.s
+.PHONY : tests/linkedListGetHeadTest.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -159,11 +447,42 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
+	@echo ... install
+	@echo ... install/local
+	@echo ... install/strip
+	@echo ... list_install_components
 	@echo ... rebuild_cache
+	@echo ... test
+	@echo ... DynamicArrayTests
+	@echo ... gmock
+	@echo ... gmock_main
+	@echo ... gtest
+	@echo ... gtest_main
 	@echo ... main
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... tests/dynamicArrayAppendTest.obj
+	@echo ... tests/dynamicArrayAppendTest.i
+	@echo ... tests/dynamicArrayAppendTest.s
+	@echo ... tests/dynamicArrayGetCapacity.obj
+	@echo ... tests/dynamicArrayGetCapacity.i
+	@echo ... tests/dynamicArrayGetCapacity.s
+	@echo ... tests/dynamicArrayGetSizeTest.obj
+	@echo ... tests/dynamicArrayGetSizeTest.i
+	@echo ... tests/dynamicArrayGetSizeTest.s
+	@echo ... tests/dynamicArrayGetTest.obj
+	@echo ... tests/dynamicArrayGetTest.i
+	@echo ... tests/dynamicArrayGetTest.s
+	@echo ... tests/dynamicArrayInsertTest.obj
+	@echo ... tests/dynamicArrayInsertTest.i
+	@echo ... tests/dynamicArrayInsertTest.s
+	@echo ... tests/dynamicArrayRemoveTest.obj
+	@echo ... tests/dynamicArrayRemoveTest.i
+	@echo ... tests/dynamicArrayRemoveTest.s
+	@echo ... tests/linkedListGetHeadTest.obj
+	@echo ... tests/linkedListGetHeadTest.i
+	@echo ... tests/linkedListGetHeadTest.s
 .PHONY : help
 
 

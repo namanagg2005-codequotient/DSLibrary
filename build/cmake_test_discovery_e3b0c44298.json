@@ -1,0 +1,157 @@
+{
+  "tests": 29,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "DynamicArrayTest",
+      "tests": 29,
+      "testsuite": [
+        {
+          "name": "RemoveFrontString",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayRemoveTest.cpp",
+          "line": 5
+        },
+        {
+          "name": "RemoveMiddleString",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayRemoveTest.cpp",
+          "line": 20
+        },
+        {
+          "name": "RemoveBackString",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayRemoveTest.cpp",
+          "line": 37
+        },
+        {
+          "name": "RemoveSingleElementString",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayRemoveTest.cpp",
+          "line": 52
+        },
+        {
+          "name": "RemoveInvalidIndexString",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayRemoveTest.cpp",
+          "line": 63
+        },
+        {
+          "name": "InsertFrontString",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayInsertTest.cpp",
+          "line": 5
+        },
+        {
+          "name": "InsertMiddleString",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayInsertTest.cpp",
+          "line": 20
+        },
+        {
+          "name": "InsertBackString",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayInsertTest.cpp",
+          "line": 35
+        },
+        {
+          "name": "InsertIntoEmptyArray",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayInsertTest.cpp",
+          "line": 50
+        },
+        {
+          "name": "InsertTriggersResize",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayInsertTest.cpp",
+          "line": 60
+        },
+        {
+          "name": "InsertInvalidPositiveIndex",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayInsertTest.cpp",
+          "line": 81
+        },
+        {
+          "name": "InsertNegativeIndex",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayInsertTest.cpp",
+          "line": 88
+        },
+        {
+          "name": "GetFirstString",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayGetTest.cpp",
+          "line": 5
+        },
+        {
+          "name": "GetMiddleString",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayGetTest.cpp",
+          "line": 16
+        },
+        {
+          "name": "GetLastString",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayGetTest.cpp",
+          "line": 27
+        },
+        {
+          "name": "GetInvalidPositiveIndex",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayGetTest.cpp",
+          "line": 38
+        },
+        {
+          "name": "GetNegativeIndex",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayGetTest.cpp",
+          "line": 47
+        },
+        {
+          "name": "GetSizeEmptyArray",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayGetSizeTest.cpp",
+          "line": 5
+        },
+        {
+          "name": "GetSizeAfterAppend",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayGetSizeTest.cpp",
+          "line": 12
+        },
+        {
+          "name": "GetSizeAfterInsert",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayGetSizeTest.cpp",
+          "line": 23
+        },
+        {
+          "name": "GetSizeAfterRemove",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayGetSizeTest.cpp",
+          "line": 35
+        },
+        {
+          "name": "GetCapacityDefaultConstructor",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayGetCapacity.cpp",
+          "line": 5
+        },
+        {
+          "name": "GetCapacityParameterizedConstructor",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayGetCapacity.cpp",
+          "line": 12
+        },
+        {
+          "name": "GetCapacityAfterSingleResize",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayGetCapacity.cpp",
+          "line": 19
+        },
+        {
+          "name": "GetCapacityAfterMultipleResizes",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayGetCapacity.cpp",
+          "line": 32
+        },
+        {
+          "name": "AppendSingleString",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayAppendTest.cpp",
+          "line": 5
+        },
+        {
+          "name": "AppendMultipleStrings",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayAppendTest.cpp",
+          "line": 15
+        },
+        {
+          "name": "AppendDuplicateStrings",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayAppendTest.cpp",
+          "line": 29
+        },
+        {
+          "name": "AppendTriggersResize",
+          "file": "C:\\Users\\naman\\OneDrive\\Attachments\\Documents\\Desktop\\CodeQuotient\\tests\\dynamicArrayAppendTest.cpp",
+          "line": 41
+        }
+      ]
+    }
+  ]
+}

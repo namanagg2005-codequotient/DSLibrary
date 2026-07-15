@@ -1,0 +1,786 @@
+Start testing: Jul 15 06:56 India Standard Time
+----------------------------------------------------------
+1/29 Testing: DynamicArrayTest.RemoveFrontString
+1/29 Test: DynamicArrayTest.RemoveFrontString
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.RemoveFrontString" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.RemoveFrontString" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.RemoveFrontString
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.RemoveFrontString
+[       OK ] DynamicArrayTest.RemoveFrontString (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.RemoveFrontString" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.RemoveFrontString" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/29 Testing: DynamicArrayTest.RemoveMiddleString
+2/29 Test: DynamicArrayTest.RemoveMiddleString
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.RemoveMiddleString" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.RemoveMiddleString" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.RemoveMiddleString
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.RemoveMiddleString
+[       OK ] DynamicArrayTest.RemoveMiddleString (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.RemoveMiddleString" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.RemoveMiddleString" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/29 Testing: DynamicArrayTest.RemoveBackString
+3/29 Test: DynamicArrayTest.RemoveBackString
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.RemoveBackString" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.RemoveBackString" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.RemoveBackString
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.RemoveBackString
+[       OK ] DynamicArrayTest.RemoveBackString (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.RemoveBackString" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.RemoveBackString" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/29 Testing: DynamicArrayTest.RemoveSingleElementString
+4/29 Test: DynamicArrayTest.RemoveSingleElementString
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.RemoveSingleElementString" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.RemoveSingleElementString" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.RemoveSingleElementString
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.RemoveSingleElementString
+[       OK ] DynamicArrayTest.RemoveSingleElementString (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.RemoveSingleElementString" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.RemoveSingleElementString" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/29 Testing: DynamicArrayTest.RemoveInvalidIndexString
+5/29 Test: DynamicArrayTest.RemoveInvalidIndexString
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.RemoveInvalidIndexString" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.RemoveInvalidIndexString" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.RemoveInvalidIndexString
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.RemoveInvalidIndexString
+[       OK ] DynamicArrayTest.RemoveInvalidIndexString (1 ms)
+[----------] 1 test from DynamicArrayTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.RemoveInvalidIndexString" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.RemoveInvalidIndexString" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/29 Testing: DynamicArrayTest.InsertFrontString
+6/29 Test: DynamicArrayTest.InsertFrontString
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.InsertFrontString" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.InsertFrontString" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.InsertFrontString
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.InsertFrontString
+[       OK ] DynamicArrayTest.InsertFrontString (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.InsertFrontString" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.InsertFrontString" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/29 Testing: DynamicArrayTest.InsertMiddleString
+7/29 Test: DynamicArrayTest.InsertMiddleString
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.InsertMiddleString" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.InsertMiddleString" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.InsertMiddleString
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.InsertMiddleString
+[       OK ] DynamicArrayTest.InsertMiddleString (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.InsertMiddleString" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.InsertMiddleString" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/29 Testing: DynamicArrayTest.InsertBackString
+8/29 Test: DynamicArrayTest.InsertBackString
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.InsertBackString" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.InsertBackString" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.InsertBackString
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.InsertBackString
+[       OK ] DynamicArrayTest.InsertBackString (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.InsertBackString" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.InsertBackString" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/29 Testing: DynamicArrayTest.InsertIntoEmptyArray
+9/29 Test: DynamicArrayTest.InsertIntoEmptyArray
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.InsertIntoEmptyArray" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.InsertIntoEmptyArray" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.InsertIntoEmptyArray
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.InsertIntoEmptyArray
+[       OK ] DynamicArrayTest.InsertIntoEmptyArray (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.InsertIntoEmptyArray" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.InsertIntoEmptyArray" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/29 Testing: DynamicArrayTest.InsertTriggersResize
+10/29 Test: DynamicArrayTest.InsertTriggersResize
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.InsertTriggersResize" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.InsertTriggersResize" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.InsertTriggersResize
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.InsertTriggersResize
+[       OK ] DynamicArrayTest.InsertTriggersResize (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.InsertTriggersResize" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.InsertTriggersResize" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/29 Testing: DynamicArrayTest.InsertInvalidPositiveIndex
+11/29 Test: DynamicArrayTest.InsertInvalidPositiveIndex
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.InsertInvalidPositiveIndex" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.InsertInvalidPositiveIndex" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.InsertInvalidPositiveIndex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.InsertInvalidPositiveIndex
+[       OK ] DynamicArrayTest.InsertInvalidPositiveIndex (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.InsertInvalidPositiveIndex" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.InsertInvalidPositiveIndex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/29 Testing: DynamicArrayTest.InsertNegativeIndex
+12/29 Test: DynamicArrayTest.InsertNegativeIndex
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.InsertNegativeIndex" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.InsertNegativeIndex" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.InsertNegativeIndex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.InsertNegativeIndex
+[       OK ] DynamicArrayTest.InsertNegativeIndex (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.InsertNegativeIndex" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.InsertNegativeIndex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/29 Testing: DynamicArrayTest.GetFirstString
+13/29 Test: DynamicArrayTest.GetFirstString
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.GetFirstString" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.GetFirstString" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.GetFirstString
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.GetFirstString
+[       OK ] DynamicArrayTest.GetFirstString (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.GetFirstString" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.GetFirstString" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/29 Testing: DynamicArrayTest.GetMiddleString
+14/29 Test: DynamicArrayTest.GetMiddleString
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.GetMiddleString" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.GetMiddleString" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.GetMiddleString
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.GetMiddleString
+[       OK ] DynamicArrayTest.GetMiddleString (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.GetMiddleString" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.GetMiddleString" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/29 Testing: DynamicArrayTest.GetLastString
+15/29 Test: DynamicArrayTest.GetLastString
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.GetLastString" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.GetLastString" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.GetLastString
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.GetLastString
+[       OK ] DynamicArrayTest.GetLastString (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.GetLastString" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.GetLastString" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/29 Testing: DynamicArrayTest.GetInvalidPositiveIndex
+16/29 Test: DynamicArrayTest.GetInvalidPositiveIndex
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.GetInvalidPositiveIndex" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.GetInvalidPositiveIndex" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.GetInvalidPositiveIndex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.GetInvalidPositiveIndex
+[       OK ] DynamicArrayTest.GetInvalidPositiveIndex (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.GetInvalidPositiveIndex" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.GetInvalidPositiveIndex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/29 Testing: DynamicArrayTest.GetNegativeIndex
+17/29 Test: DynamicArrayTest.GetNegativeIndex
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.GetNegativeIndex" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.GetNegativeIndex" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.GetNegativeIndex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.GetNegativeIndex
+[       OK ] DynamicArrayTest.GetNegativeIndex (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.GetNegativeIndex" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.GetNegativeIndex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/29 Testing: DynamicArrayTest.GetSizeEmptyArray
+18/29 Test: DynamicArrayTest.GetSizeEmptyArray
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.GetSizeEmptyArray" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.GetSizeEmptyArray" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.GetSizeEmptyArray
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.GetSizeEmptyArray
+[       OK ] DynamicArrayTest.GetSizeEmptyArray (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.GetSizeEmptyArray" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.GetSizeEmptyArray" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/29 Testing: DynamicArrayTest.GetSizeAfterAppend
+19/29 Test: DynamicArrayTest.GetSizeAfterAppend
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.GetSizeAfterAppend" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.GetSizeAfterAppend" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.GetSizeAfterAppend
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.GetSizeAfterAppend
+[       OK ] DynamicArrayTest.GetSizeAfterAppend (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.GetSizeAfterAppend" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.GetSizeAfterAppend" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/29 Testing: DynamicArrayTest.GetSizeAfterInsert
+20/29 Test: DynamicArrayTest.GetSizeAfterInsert
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.GetSizeAfterInsert" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.GetSizeAfterInsert" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.GetSizeAfterInsert
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.GetSizeAfterInsert
+[       OK ] DynamicArrayTest.GetSizeAfterInsert (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.GetSizeAfterInsert" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.GetSizeAfterInsert" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/29 Testing: DynamicArrayTest.GetSizeAfterRemove
+21/29 Test: DynamicArrayTest.GetSizeAfterRemove
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.GetSizeAfterRemove" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.GetSizeAfterRemove" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.GetSizeAfterRemove
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.GetSizeAfterRemove
+[       OK ] DynamicArrayTest.GetSizeAfterRemove (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.GetSizeAfterRemove" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.GetSizeAfterRemove" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/29 Testing: DynamicArrayTest.GetCapacityDefaultConstructor
+22/29 Test: DynamicArrayTest.GetCapacityDefaultConstructor
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.GetCapacityDefaultConstructor" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.GetCapacityDefaultConstructor" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.GetCapacityDefaultConstructor
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.GetCapacityDefaultConstructor
+[       OK ] DynamicArrayTest.GetCapacityDefaultConstructor (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.GetCapacityDefaultConstructor" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.GetCapacityDefaultConstructor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/29 Testing: DynamicArrayTest.GetCapacityParameterizedConstructor
+23/29 Test: DynamicArrayTest.GetCapacityParameterizedConstructor
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.GetCapacityParameterizedConstructor" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.GetCapacityParameterizedConstructor" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.GetCapacityParameterizedConstructor
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.GetCapacityParameterizedConstructor
+[       OK ] DynamicArrayTest.GetCapacityParameterizedConstructor (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.GetCapacityParameterizedConstructor" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.GetCapacityParameterizedConstructor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/29 Testing: DynamicArrayTest.GetCapacityAfterSingleResize
+24/29 Test: DynamicArrayTest.GetCapacityAfterSingleResize
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.GetCapacityAfterSingleResize" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.GetCapacityAfterSingleResize" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.GetCapacityAfterSingleResize
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.GetCapacityAfterSingleResize
+[       OK ] DynamicArrayTest.GetCapacityAfterSingleResize (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.GetCapacityAfterSingleResize" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.GetCapacityAfterSingleResize" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/29 Testing: DynamicArrayTest.GetCapacityAfterMultipleResizes
+25/29 Test: DynamicArrayTest.GetCapacityAfterMultipleResizes
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.GetCapacityAfterMultipleResizes" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.GetCapacityAfterMultipleResizes" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.GetCapacityAfterMultipleResizes
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.GetCapacityAfterMultipleResizes
+[       OK ] DynamicArrayTest.GetCapacityAfterMultipleResizes (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.GetCapacityAfterMultipleResizes" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.GetCapacityAfterMultipleResizes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/29 Testing: DynamicArrayTest.AppendSingleString
+26/29 Test: DynamicArrayTest.AppendSingleString
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.AppendSingleString" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.AppendSingleString" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.AppendSingleString
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.AppendSingleString
+[       OK ] DynamicArrayTest.AppendSingleString (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.AppendSingleString" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.AppendSingleString" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/29 Testing: DynamicArrayTest.AppendMultipleStrings
+27/29 Test: DynamicArrayTest.AppendMultipleStrings
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.AppendMultipleStrings" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.AppendMultipleStrings" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.AppendMultipleStrings
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.AppendMultipleStrings
+[       OK ] DynamicArrayTest.AppendMultipleStrings (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.AppendMultipleStrings" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.AppendMultipleStrings" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/29 Testing: DynamicArrayTest.AppendDuplicateStrings
+28/29 Test: DynamicArrayTest.AppendDuplicateStrings
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.AppendDuplicateStrings" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.AppendDuplicateStrings" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.AppendDuplicateStrings
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.AppendDuplicateStrings
+[       OK ] DynamicArrayTest.AppendDuplicateStrings (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.AppendDuplicateStrings" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.AppendDuplicateStrings" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/29 Testing: DynamicArrayTest.AppendTriggersResize
+29/29 Test: DynamicArrayTest.AppendTriggersResize
+Command: "C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe" "--gtest_filter=DynamicArrayTest.AppendTriggersResize" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build
+"DynamicArrayTest.AppendTriggersResize" start time: Jul 15 06:56 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DynamicArrayTest.AppendTriggersResize
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicArrayTest
+[ RUN      ] DynamicArrayTest.AppendTriggersResize
+[       OK ] DynamicArrayTest.AppendTriggersResize (0 ms)
+[----------] 1 test from DynamicArrayTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"DynamicArrayTest.AppendTriggersResize" end time: Jul 15 06:56 India Standard Time
+"DynamicArrayTest.AppendTriggersResize" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 15 06:56 India Standard Time

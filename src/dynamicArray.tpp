@@ -158,7 +158,7 @@ T DynamicArray<T>::remove(int index)
 {
     if (index < 0 || index >= size)
     {
-        std::out_of_range("Cannot access this memory");
+        throw std::out_of_range("Cannot access this memory");
     }
 
     T savedValue = ptr[index];
@@ -169,6 +169,7 @@ T DynamicArray<T>::remove(int index)
         new (&ptr[i]) T(ptr[i + 1]);
     }
 
+    ptr[size - 1].~T(); 
     size--;
     return savedValue;
 }
@@ -178,7 +179,7 @@ T DynamicArray<T>::get(int index) const
 {
     if (index < 0 || index >= size)
     {
-        std::out_of_range("Cannot access this memory");
+        throw std::out_of_range("Cannot access this memory");
     }
 
     return ptr[index];
@@ -201,7 +202,7 @@ void DynamicArray<T>::insert(int index, T value)
 {
     if (index < 0 || index > size)
     {
-        std::out_of_range("Cannot access this memory");
+        throw std::out_of_range("Cannot access this memory");
     }
 
     if (size == capacity)
