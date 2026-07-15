@@ -583,6 +583,438 @@ set_tests_properties([=[LinkedListConstructorTest.CopyConstructorIndependentInse
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
 )
+add_test([=[HashMapUserDefinedTest.InsertAndGetUserDefinedKey]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapUserDefinedTest.InsertAndGetUserDefinedKey]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapUserDefinedTest.InsertAndGetUserDefinedKey]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapUserDefinedTest.cpp:40]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapUserDefinedTest.ExistsUserDefinedKey]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapUserDefinedTest.ExistsUserDefinedKey]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapUserDefinedTest.ExistsUserDefinedKey]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapUserDefinedTest.cpp:51]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapUserDefinedTest.RemoveUserDefinedKey]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapUserDefinedTest.RemoveUserDefinedKey]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapUserDefinedTest.RemoveUserDefinedKey]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapUserDefinedTest.cpp:62]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapUserDefinedTest.UpdateExistingUserDefinedKey]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapUserDefinedTest.UpdateExistingUserDefinedKey]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapUserDefinedTest.UpdateExistingUserDefinedKey]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapUserDefinedTest.cpp:76]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapUserDefinedTest.UserDefinedValueType]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapUserDefinedTest.UserDefinedValueType]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapUserDefinedTest.UserDefinedValueType]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapUserDefinedTest.cpp:89]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapUserDefinedTest.MultipleUserDefinedKeys]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapUserDefinedTest.MultipleUserDefinedKeys]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapUserDefinedTest.MultipleUserDefinedKeys]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapUserDefinedTest.cpp:103]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapUserDefinedTest.UserDefinedKeyAfterRehash]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapUserDefinedTest.UserDefinedKeyAfterRehash]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapUserDefinedTest.UserDefinedKeyAfterRehash]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapUserDefinedTest.cpp:122]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapUserDefinedTest.MissingUserDefinedKeyThrows]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapUserDefinedTest.MissingUserDefinedKeyThrows]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapUserDefinedTest.MissingUserDefinedKeyThrows]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapUserDefinedTest.cpp:141]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapSetTest.InsertSingleKeyValuePair]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapSetTest.InsertSingleKeyValuePair]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapSetTest.InsertSingleKeyValuePair]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapSetTest.cpp:4]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapSetTest.InsertMultipleKeyValuePairs]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapSetTest.InsertMultipleKeyValuePairs]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapSetTest.InsertMultipleKeyValuePairs]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapSetTest.cpp:15]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapSetTest.UpdatingExistingKeyChangesValue]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapSetTest.UpdatingExistingKeyChangesValue]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapSetTest.UpdatingExistingKeyChangesValue]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapSetTest.cpp:30]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapSetTest.UpdatingExistingKeyDoesNotIncreaseSize]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapSetTest.UpdatingExistingKeyDoesNotIncreaseSize]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapSetTest.UpdatingExistingKeyDoesNotIncreaseSize]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapSetTest.cpp:40]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapSetTest.InsertNegativeKey]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapSetTest.InsertNegativeKey]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapSetTest.InsertNegativeKey]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapSetTest.cpp:53]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapSetTest.InsertStringKeys]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapSetTest.InsertStringKeys]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapSetTest.InsertStringKeys]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapSetTest.cpp:63]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapSetTest.RehashPreservesAllValues]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapSetTest.RehashPreservesAllValues]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapSetTest.RehashPreservesAllValues]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapSetTest.cpp:74]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapSetTest.RehashDoesNotLoseExistingData]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapSetTest.RehashDoesNotLoseExistingData]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapSetTest.RehashDoesNotLoseExistingData]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapSetTest.cpp:91]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapRemoveTest.RemoveExistingKey]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapRemoveTest.RemoveExistingKey]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapRemoveTest.RemoveExistingKey]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapRemoveTest.cpp:4]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapRemoveTest.RemoveFromMultipleKeys]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapRemoveTest.RemoveFromMultipleKeys]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapRemoveTest.RemoveFromMultipleKeys]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapRemoveTest.cpp:16]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapRemoveTest.RemoveFirstInsertedKey]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapRemoveTest.RemoveFirstInsertedKey]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapRemoveTest.RemoveFirstInsertedKey]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapRemoveTest.cpp:33]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapRemoveTest.RemoveLastRemainingKey]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapRemoveTest.RemoveLastRemainingKey]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapRemoveTest.RemoveLastRemainingKey]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapRemoveTest.cpp:46]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapRemoveTest.RemoveNonExistingKeyDoesNotChangeSize]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapRemoveTest.RemoveNonExistingKeyDoesNotChangeSize]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapRemoveTest.RemoveNonExistingKeyDoesNotChangeSize]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapRemoveTest.cpp:58]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapRemoveTest.RemoveNegativeKey]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapRemoveTest.RemoveNegativeKey]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapRemoveTest.RemoveNegativeKey]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapRemoveTest.cpp:72]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapRemoveTest.RemoveAfterRehash]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapRemoveTest.RemoveAfterRehash]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapRemoveTest.RemoveAfterRehash]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapRemoveTest.cpp:83]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapRemoveTest.RemoveAllKeys]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapRemoveTest.RemoveAllKeys]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapRemoveTest.RemoveAllKeys]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapRemoveTest.cpp:101]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapGetTest.GetExistingKey]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapGetTest.GetExistingKey]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapGetTest.GetExistingKey]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapGetTest.cpp:5]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapGetTest.GetMultipleKeys]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapGetTest.GetMultipleKeys]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapGetTest.GetMultipleKeys]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapGetTest.cpp:14]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapGetTest.GetThrowsExceptionForMissingKey]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapGetTest.GetThrowsExceptionForMissingKey]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapGetTest.GetThrowsExceptionForMissingKey]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapGetTest.cpp:27]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapGetTest.GetAfterUpdatingValue]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapGetTest.GetAfterUpdatingValue]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapGetTest.GetAfterUpdatingValue]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapGetTest.cpp:34]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapGetTest.GetAfterRehash]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapGetTest.GetAfterRehash]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapGetTest.GetAfterRehash]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapGetTest.cpp:44]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapGetTest.ReturnedReferenceCanModifyValue]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapGetTest.ReturnedReferenceCanModifyValue]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapGetTest.ReturnedReferenceCanModifyValue]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapGetTest.cpp:59]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapGetTest.GetNegativeKey]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapGetTest.GetNegativeKey]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapGetTest.GetNegativeKey]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapGetTest.cpp:70]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapGetterTest.DefaultSizeIsZero]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapGetterTest.DefaultSizeIsZero]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapGetterTest.DefaultSizeIsZero]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapGetMethodsTest.cpp:4]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapGetterTest.SizeAfterSingleInsertion]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapGetterTest.SizeAfterSingleInsertion]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapGetterTest.SizeAfterSingleInsertion]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapGetMethodsTest.cpp:11]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapGetterTest.SizeAfterMultipleInsertions]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapGetterTest.SizeAfterMultipleInsertions]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapGetterTest.SizeAfterMultipleInsertions]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapGetMethodsTest.cpp:20]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapGetterTest.SizeDoesNotIncreaseForDuplicateKey]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapGetterTest.SizeDoesNotIncreaseForDuplicateKey]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapGetterTest.SizeDoesNotIncreaseForDuplicateKey]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapGetMethodsTest.cpp:31]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapGetterTest.SizeDecreasesAfterRemoval]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapGetterTest.SizeDecreasesAfterRemoval]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapGetterTest.SizeDecreasesAfterRemoval]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapGetMethodsTest.cpp:41]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapGetterTest.DefaultLoadFactorIsZero]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapGetterTest.DefaultLoadFactorIsZero]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapGetterTest.DefaultLoadFactorIsZero]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapGetMethodsTest.cpp:53]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapGetterTest.LoadFactorAfterOneInsertion]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapGetterTest.LoadFactorAfterOneInsertion]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapGetterTest.LoadFactorAfterOneInsertion]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapGetMethodsTest.cpp:60]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapGetterTest.LoadFactorAfterMultipleInsertions]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapGetterTest.LoadFactorAfterMultipleInsertions]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapGetterTest.LoadFactorAfterMultipleInsertions]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapGetMethodsTest.cpp:69]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapGetterTest.LoadFactorAfterRemoval]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapGetterTest.LoadFactorAfterRemoval]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapGetterTest.LoadFactorAfterRemoval]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapGetMethodsTest.cpp:80]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapExistsTest.ExistingKeyReturnsTrue]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapExistsTest.ExistingKeyReturnsTrue]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapExistsTest.ExistingKeyReturnsTrue]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapExistsTest.cpp:5]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapExistsTest.MissingKeyReturnsFalse]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapExistsTest.MissingKeyReturnsFalse]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapExistsTest.MissingKeyReturnsFalse]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapExistsTest.cpp:14]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapExistsTest.ExistsAfterMultipleInsertions]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapExistsTest.ExistsAfterMultipleInsertions]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapExistsTest.ExistsAfterMultipleInsertions]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapExistsTest.cpp:21]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapExistsTest.ExistsAfterRemoval]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapExistsTest.ExistsAfterRemoval]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapExistsTest.ExistsAfterRemoval]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapExistsTest.cpp:34]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapExistsTest.ExistsAfterUpdatingValue]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapExistsTest.ExistsAfterUpdatingValue]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapExistsTest.ExistsAfterUpdatingValue]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapExistsTest.cpp:44]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapExistsTest.ExistsWithNegativeKey]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapExistsTest.ExistsWithNegativeKey]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapExistsTest.ExistsWithNegativeKey]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapExistsTest.cpp:54]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapExistsTest.ExistsAfterRehash]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapExistsTest.ExistsAfterRehash]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapExistsTest.ExistsAfterRehash]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapExistsTest.cpp:63]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapExistsTest.StringKeys]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=HashMapExistsTest.StringKeys]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapExistsTest.StringKeys]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\naman\OneDrive\Attachments\Documents\Desktop\CodeQuotient\tests\hashmapExistsTest.cpp:80]==]
+    WORKING_DIRECTORY [==[C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
 add_test([=[DynamicArrayUserDefinedTypeTest.AppendUserDefinedObjects]=]  C:/Users/naman/OneDrive/Attachments/Documents/Desktop/CodeQuotient/build/DynamicArrayTests.exe [==[--gtest_filter=DynamicArrayUserDefinedTypeTest.AppendUserDefinedObjects]==] --gtest_also_run_disabled_tests)
 set_tests_properties([=[DynamicArrayUserDefinedTypeTest.AppendUserDefinedObjects]=]
   PROPERTIES
@@ -1051,4 +1483,4 @@ set_tests_properties([=[DynamicArrayTest.AppendTriggersResize]=]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
 )
-set(DynamicArrayTests_TESTS [==[LinkedListUserDefinedTest.InsertBackStoresObjects]==] [==[LinkedListUserDefinedTest.InsertFrontStoresObjects]==] [==[LinkedListUserDefinedTest.SearchFindsExistingObject]==] [==[LinkedListUserDefinedTest.SearchReturnsFalseForMissingObject]==] [==[LinkedListUserDefinedTest.RemoveDeletesCorrectObject]==] [==[LinkedListUserDefinedTest.CopyConstructorCopiesObjects]==] [==[LinkedListUserDefinedTest.CopyConstructorPerformsDeepCopy]==] [==[LinkedListUserDefinedTest.AssignmentOperatorCopiesObjects]==] [==[LinkedListUserDefinedTest.AssignmentOperatorPerformsDeepCopy]==] [==[LinkedListUserDefinedTest.SelfAssignment]==] [==[LinkedListUserDefinedTest.CopyAndOriginalRemainIndependent]==] [==[LinkedListUserDefinedTest.RemoveLastObject]==] [==[LinkedListSizeTest.EmptyList]==] [==[LinkedListSizeTest.AfterInsertAndDeleteOperations]==] [==[LinkedListSearchTest.SearchExistingElement]==] [==[LinkedListSearchTest.SearchNonExistingElement]==] [==[LinkedListSearchTest.SearchInEmptyList]==] [==[LinkedListSearchTest.SearchAfterDeletion]==] [==[LinkedListRemoveTest.RemoveHead]==] [==[LinkedListRemoveTest.RemoveMiddle]==] [==[LinkedListRemoveTest.RemoveTail]==] [==[LinkedListRemoveTest.RemoveOnlyNode]==] [==[LinkedListRemoveTest.RemoveNonExistingNode]==] [==[LinkedListInsertTest.InsertAtBeginning]==] [==[LinkedListInsertTest.InsertInMiddle]==] [==[LinkedListInsertTest.InsertAtEnd]==] [==[LinkedListInsertTest.InsertInvalidIndex]==] [==[LinkedListInsertFrontTest.InsertIntoEmptyList]==] [==[LinkedListInsertFrontTest.InsertMultipleElements]==] [==[LinkedListInsertFrontTest.HeadUpdatedCorrectly]==] [==[LinkedListInsertFrontTest.TailRemainsUnchanged]==] [==[LinkedListInsertBackTest.InsertIntoEmptyList]==] [==[LinkedListInsertBackTest.InsertMultipleElements]==] [==[LinkedListInsertBackTest.TailUpdatedCorrectly]==] [==[LinkedListInsertBackTest.HeadRemainsUnchanged]==] [==[LinkedListGetTailTest.EmptyList]==] [==[LinkedListGetTailTest.SingleElement]==] [==[LinkedListGetTailTest.MultipleElements]==] [==[LinkedListGetTailTest.AfterDeletingTail]==] [==[LinkedListGetHeadTest.EmptyList]==] [==[LinkedListGetHeadTest.SingleElement]==] [==[LinkedListGetHeadTest.MultipleElements]==] [==[LinkedListGetHeadTest.AfterDeletingHead]==] [==[LinkedListFindNodeTest.FindHeadNode]==] [==[LinkedListFindNodeTest.FindMiddleNode]==] [==[LinkedListFindNodeTest.FindTailNode]==] [==[LinkedListFindNodeTest.FindNonExistingNode]==] [==[LinkedListDeleteFrontTest.DeleteFromSingleElementList]==] [==[LinkedListDeleteFrontTest.DeleteFromMultipleElementList]==] [==[LinkedListDeleteFrontTest.DeleteUntilEmpty]==] [==[LinkedListDeleteFrontTest.DeleteFromEmptyList]==] [==[LinkedListDeleteBackTest.DeleteFromSingleElementList]==] [==[LinkedListDeleteBackTest.DeleteFromMultipleElementList]==] [==[LinkedListDeleteBackTest.DeleteUntilEmpty]==] [==[LinkedListDeleteBackTest.DeleteFromEmptyList]==] [==[LinkedListConstructorTest.ArrayConstructorCreatesCorrectList]==] [==[LinkedListConstructorTest.ArrayConstructorHandlesSingleElement]==] [==[LinkedListConstructorTest.ArrayConstructorHandlesEmptyArray]==] [==[LinkedListConstructorTest.ArrayConstructorPreservesOrder]==] [==[LinkedListConstructorTest.CopyConstructorCopiesSize]==] [==[LinkedListConstructorTest.CopyConstructorCopiesElements]==] [==[LinkedListConstructorTest.CopyConstructorCreatesDeepCopy]==] [==[LinkedListConstructorTest.CopyConstructorCreatesIndependentNodes]==] [==[LinkedListConstructorTest.CopyConstructorHandlesEmptyList]==] [==[LinkedListConstructorTest.CopyConstructorIndependentInsertion]==] [==[DynamicArrayUserDefinedTypeTest.AppendUserDefinedObjects]==] [==[DynamicArrayUserDefinedTypeTest.CopyConstructorCopiesObjects]==] [==[DynamicArrayUserDefinedTypeTest.CopyConstructorPerformsDeepCopy]==] [==[DynamicArrayUserDefinedTypeTest.AssignmentOperatorCopiesObjects]==] [==[DynamicArrayUserDefinedTypeTest.AssignmentOperatorPerformsDeepCopy]==] [==[DynamicArrayUserDefinedTypeTest.SelfAssignment]==] [==[DynamicArrayUserDefinedTypeTest.ResizePreservesObjects]==] [==[DynamicArrayUserDefinedTypeTest.CopyAndOriginalRemainIndependent]==] [==[DynamicArrayUserDefinedTypeTest.EmptyArrayCopyConstructor]==] [==[DynamicArrayUserDefinedTypeTest.EmptyArrayAssignmentOperator]==] [==[DynamicArrayTest.RemoveFrontString]==] [==[DynamicArrayTest.RemoveMiddleString]==] [==[DynamicArrayTest.RemoveBackString]==] [==[DynamicArrayTest.RemoveSingleElementString]==] [==[DynamicArrayTest.RemoveInvalidIndexString]==] [==[DynamicArrayTest.InsertFrontString]==] [==[DynamicArrayTest.InsertMiddleString]==] [==[DynamicArrayTest.InsertBackString]==] [==[DynamicArrayTest.InsertIntoEmptyArray]==] [==[DynamicArrayTest.InsertTriggersResize]==] [==[DynamicArrayTest.InsertInvalidPositiveIndex]==] [==[DynamicArrayTest.InsertNegativeIndex]==] [==[DynamicArrayTest.GetFirstString]==] [==[DynamicArrayTest.GetMiddleString]==] [==[DynamicArrayTest.GetLastString]==] [==[DynamicArrayTest.GetInvalidPositiveIndex]==] [==[DynamicArrayTest.GetNegativeIndex]==] [==[DynamicArrayTest.GetSizeEmptyArray]==] [==[DynamicArrayTest.GetSizeAfterAppend]==] [==[DynamicArrayTest.GetSizeAfterInsert]==] [==[DynamicArrayTest.GetSizeAfterRemove]==] [==[DynamicArrayTest.GetCapacityDefaultConstructor]==] [==[DynamicArrayTest.GetCapacityParameterizedConstructor]==] [==[DynamicArrayTest.GetCapacityAfterSingleResize]==] [==[DynamicArrayTest.GetCapacityAfterMultipleResizes]==] [==[DynamicArrayTest.CopyConstructorCopiesSize]==] [==[DynamicArrayTest.CopyConstructorCopiesCapacity]==] [==[DynamicArrayTest.CopyConstructorCopiesElements]==] [==[DynamicArrayTest.CopyConstructorPerformsDeepCopy]==] [==[DynamicArrayTest.CopyConstructorHandlesEmptyArray]==] [==[DynamicArrayTest.CopyConstructorCreatesIndependentObject]==] [==[DynamicArrayTest.AssignmentOperatorCopiesSize]==] [==[DynamicArrayTest.AssignmentOperatorCopiesCapacity]==] [==[DynamicArrayTest.AssignmentOperatorCopiesElements]==] [==[DynamicArrayTest.AssignmentOperatorPerformsDeepCopy]==] [==[DynamicArrayTest.AssignmentOperatorHandlesEmptyArray]==] [==[DynamicArrayTest.AssignmentOperatorCreatesIndependentObject]==] [==[DynamicArrayTest.AssignmentOperatorHandlesSelfAssignment]==] [==[DynamicArrayTest.AppendSingleString]==] [==[DynamicArrayTest.AppendMultipleStrings]==] [==[DynamicArrayTest.AppendDuplicateStrings]==] [==[DynamicArrayTest.AppendTriggersResize]==])
+set(DynamicArrayTests_TESTS [==[LinkedListUserDefinedTest.InsertBackStoresObjects]==] [==[LinkedListUserDefinedTest.InsertFrontStoresObjects]==] [==[LinkedListUserDefinedTest.SearchFindsExistingObject]==] [==[LinkedListUserDefinedTest.SearchReturnsFalseForMissingObject]==] [==[LinkedListUserDefinedTest.RemoveDeletesCorrectObject]==] [==[LinkedListUserDefinedTest.CopyConstructorCopiesObjects]==] [==[LinkedListUserDefinedTest.CopyConstructorPerformsDeepCopy]==] [==[LinkedListUserDefinedTest.AssignmentOperatorCopiesObjects]==] [==[LinkedListUserDefinedTest.AssignmentOperatorPerformsDeepCopy]==] [==[LinkedListUserDefinedTest.SelfAssignment]==] [==[LinkedListUserDefinedTest.CopyAndOriginalRemainIndependent]==] [==[LinkedListUserDefinedTest.RemoveLastObject]==] [==[LinkedListSizeTest.EmptyList]==] [==[LinkedListSizeTest.AfterInsertAndDeleteOperations]==] [==[LinkedListSearchTest.SearchExistingElement]==] [==[LinkedListSearchTest.SearchNonExistingElement]==] [==[LinkedListSearchTest.SearchInEmptyList]==] [==[LinkedListSearchTest.SearchAfterDeletion]==] [==[LinkedListRemoveTest.RemoveHead]==] [==[LinkedListRemoveTest.RemoveMiddle]==] [==[LinkedListRemoveTest.RemoveTail]==] [==[LinkedListRemoveTest.RemoveOnlyNode]==] [==[LinkedListRemoveTest.RemoveNonExistingNode]==] [==[LinkedListInsertTest.InsertAtBeginning]==] [==[LinkedListInsertTest.InsertInMiddle]==] [==[LinkedListInsertTest.InsertAtEnd]==] [==[LinkedListInsertTest.InsertInvalidIndex]==] [==[LinkedListInsertFrontTest.InsertIntoEmptyList]==] [==[LinkedListInsertFrontTest.InsertMultipleElements]==] [==[LinkedListInsertFrontTest.HeadUpdatedCorrectly]==] [==[LinkedListInsertFrontTest.TailRemainsUnchanged]==] [==[LinkedListInsertBackTest.InsertIntoEmptyList]==] [==[LinkedListInsertBackTest.InsertMultipleElements]==] [==[LinkedListInsertBackTest.TailUpdatedCorrectly]==] [==[LinkedListInsertBackTest.HeadRemainsUnchanged]==] [==[LinkedListGetTailTest.EmptyList]==] [==[LinkedListGetTailTest.SingleElement]==] [==[LinkedListGetTailTest.MultipleElements]==] [==[LinkedListGetTailTest.AfterDeletingTail]==] [==[LinkedListGetHeadTest.EmptyList]==] [==[LinkedListGetHeadTest.SingleElement]==] [==[LinkedListGetHeadTest.MultipleElements]==] [==[LinkedListGetHeadTest.AfterDeletingHead]==] [==[LinkedListFindNodeTest.FindHeadNode]==] [==[LinkedListFindNodeTest.FindMiddleNode]==] [==[LinkedListFindNodeTest.FindTailNode]==] [==[LinkedListFindNodeTest.FindNonExistingNode]==] [==[LinkedListDeleteFrontTest.DeleteFromSingleElementList]==] [==[LinkedListDeleteFrontTest.DeleteFromMultipleElementList]==] [==[LinkedListDeleteFrontTest.DeleteUntilEmpty]==] [==[LinkedListDeleteFrontTest.DeleteFromEmptyList]==] [==[LinkedListDeleteBackTest.DeleteFromSingleElementList]==] [==[LinkedListDeleteBackTest.DeleteFromMultipleElementList]==] [==[LinkedListDeleteBackTest.DeleteUntilEmpty]==] [==[LinkedListDeleteBackTest.DeleteFromEmptyList]==] [==[LinkedListConstructorTest.ArrayConstructorCreatesCorrectList]==] [==[LinkedListConstructorTest.ArrayConstructorHandlesSingleElement]==] [==[LinkedListConstructorTest.ArrayConstructorHandlesEmptyArray]==] [==[LinkedListConstructorTest.ArrayConstructorPreservesOrder]==] [==[LinkedListConstructorTest.CopyConstructorCopiesSize]==] [==[LinkedListConstructorTest.CopyConstructorCopiesElements]==] [==[LinkedListConstructorTest.CopyConstructorCreatesDeepCopy]==] [==[LinkedListConstructorTest.CopyConstructorCreatesIndependentNodes]==] [==[LinkedListConstructorTest.CopyConstructorHandlesEmptyList]==] [==[LinkedListConstructorTest.CopyConstructorIndependentInsertion]==] [==[HashMapUserDefinedTest.InsertAndGetUserDefinedKey]==] [==[HashMapUserDefinedTest.ExistsUserDefinedKey]==] [==[HashMapUserDefinedTest.RemoveUserDefinedKey]==] [==[HashMapUserDefinedTest.UpdateExistingUserDefinedKey]==] [==[HashMapUserDefinedTest.UserDefinedValueType]==] [==[HashMapUserDefinedTest.MultipleUserDefinedKeys]==] [==[HashMapUserDefinedTest.UserDefinedKeyAfterRehash]==] [==[HashMapUserDefinedTest.MissingUserDefinedKeyThrows]==] [==[HashMapSetTest.InsertSingleKeyValuePair]==] [==[HashMapSetTest.InsertMultipleKeyValuePairs]==] [==[HashMapSetTest.UpdatingExistingKeyChangesValue]==] [==[HashMapSetTest.UpdatingExistingKeyDoesNotIncreaseSize]==] [==[HashMapSetTest.InsertNegativeKey]==] [==[HashMapSetTest.InsertStringKeys]==] [==[HashMapSetTest.RehashPreservesAllValues]==] [==[HashMapSetTest.RehashDoesNotLoseExistingData]==] [==[HashMapRemoveTest.RemoveExistingKey]==] [==[HashMapRemoveTest.RemoveFromMultipleKeys]==] [==[HashMapRemoveTest.RemoveFirstInsertedKey]==] [==[HashMapRemoveTest.RemoveLastRemainingKey]==] [==[HashMapRemoveTest.RemoveNonExistingKeyDoesNotChangeSize]==] [==[HashMapRemoveTest.RemoveNegativeKey]==] [==[HashMapRemoveTest.RemoveAfterRehash]==] [==[HashMapRemoveTest.RemoveAllKeys]==] [==[HashMapGetTest.GetExistingKey]==] [==[HashMapGetTest.GetMultipleKeys]==] [==[HashMapGetTest.GetThrowsExceptionForMissingKey]==] [==[HashMapGetTest.GetAfterUpdatingValue]==] [==[HashMapGetTest.GetAfterRehash]==] [==[HashMapGetTest.ReturnedReferenceCanModifyValue]==] [==[HashMapGetTest.GetNegativeKey]==] [==[HashMapGetterTest.DefaultSizeIsZero]==] [==[HashMapGetterTest.SizeAfterSingleInsertion]==] [==[HashMapGetterTest.SizeAfterMultipleInsertions]==] [==[HashMapGetterTest.SizeDoesNotIncreaseForDuplicateKey]==] [==[HashMapGetterTest.SizeDecreasesAfterRemoval]==] [==[HashMapGetterTest.DefaultLoadFactorIsZero]==] [==[HashMapGetterTest.LoadFactorAfterOneInsertion]==] [==[HashMapGetterTest.LoadFactorAfterMultipleInsertions]==] [==[HashMapGetterTest.LoadFactorAfterRemoval]==] [==[HashMapExistsTest.ExistingKeyReturnsTrue]==] [==[HashMapExistsTest.MissingKeyReturnsFalse]==] [==[HashMapExistsTest.ExistsAfterMultipleInsertions]==] [==[HashMapExistsTest.ExistsAfterRemoval]==] [==[HashMapExistsTest.ExistsAfterUpdatingValue]==] [==[HashMapExistsTest.ExistsWithNegativeKey]==] [==[HashMapExistsTest.ExistsAfterRehash]==] [==[HashMapExistsTest.StringKeys]==] [==[DynamicArrayUserDefinedTypeTest.AppendUserDefinedObjects]==] [==[DynamicArrayUserDefinedTypeTest.CopyConstructorCopiesObjects]==] [==[DynamicArrayUserDefinedTypeTest.CopyConstructorPerformsDeepCopy]==] [==[DynamicArrayUserDefinedTypeTest.AssignmentOperatorCopiesObjects]==] [==[DynamicArrayUserDefinedTypeTest.AssignmentOperatorPerformsDeepCopy]==] [==[DynamicArrayUserDefinedTypeTest.SelfAssignment]==] [==[DynamicArrayUserDefinedTypeTest.ResizePreservesObjects]==] [==[DynamicArrayUserDefinedTypeTest.CopyAndOriginalRemainIndependent]==] [==[DynamicArrayUserDefinedTypeTest.EmptyArrayCopyConstructor]==] [==[DynamicArrayUserDefinedTypeTest.EmptyArrayAssignmentOperator]==] [==[DynamicArrayTest.RemoveFrontString]==] [==[DynamicArrayTest.RemoveMiddleString]==] [==[DynamicArrayTest.RemoveBackString]==] [==[DynamicArrayTest.RemoveSingleElementString]==] [==[DynamicArrayTest.RemoveInvalidIndexString]==] [==[DynamicArrayTest.InsertFrontString]==] [==[DynamicArrayTest.InsertMiddleString]==] [==[DynamicArrayTest.InsertBackString]==] [==[DynamicArrayTest.InsertIntoEmptyArray]==] [==[DynamicArrayTest.InsertTriggersResize]==] [==[DynamicArrayTest.InsertInvalidPositiveIndex]==] [==[DynamicArrayTest.InsertNegativeIndex]==] [==[DynamicArrayTest.GetFirstString]==] [==[DynamicArrayTest.GetMiddleString]==] [==[DynamicArrayTest.GetLastString]==] [==[DynamicArrayTest.GetInvalidPositiveIndex]==] [==[DynamicArrayTest.GetNegativeIndex]==] [==[DynamicArrayTest.GetSizeEmptyArray]==] [==[DynamicArrayTest.GetSizeAfterAppend]==] [==[DynamicArrayTest.GetSizeAfterInsert]==] [==[DynamicArrayTest.GetSizeAfterRemove]==] [==[DynamicArrayTest.GetCapacityDefaultConstructor]==] [==[DynamicArrayTest.GetCapacityParameterizedConstructor]==] [==[DynamicArrayTest.GetCapacityAfterSingleResize]==] [==[DynamicArrayTest.GetCapacityAfterMultipleResizes]==] [==[DynamicArrayTest.CopyConstructorCopiesSize]==] [==[DynamicArrayTest.CopyConstructorCopiesCapacity]==] [==[DynamicArrayTest.CopyConstructorCopiesElements]==] [==[DynamicArrayTest.CopyConstructorPerformsDeepCopy]==] [==[DynamicArrayTest.CopyConstructorHandlesEmptyArray]==] [==[DynamicArrayTest.CopyConstructorCreatesIndependentObject]==] [==[DynamicArrayTest.AssignmentOperatorCopiesSize]==] [==[DynamicArrayTest.AssignmentOperatorCopiesCapacity]==] [==[DynamicArrayTest.AssignmentOperatorCopiesElements]==] [==[DynamicArrayTest.AssignmentOperatorPerformsDeepCopy]==] [==[DynamicArrayTest.AssignmentOperatorHandlesEmptyArray]==] [==[DynamicArrayTest.AssignmentOperatorCreatesIndependentObject]==] [==[DynamicArrayTest.AssignmentOperatorHandlesSelfAssignment]==] [==[DynamicArrayTest.AppendSingleString]==] [==[DynamicArrayTest.AppendMultipleStrings]==] [==[DynamicArrayTest.AppendDuplicateStrings]==] [==[DynamicArrayTest.AppendTriggersResize]==])

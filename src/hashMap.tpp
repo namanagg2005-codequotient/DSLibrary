@@ -53,7 +53,7 @@ HashNode<K,V>::~HashNode(){
 
 }
 
-size_t Hash<int>::operator()(const int& key) const{
+inline size_t Hash<int>::operator()(const int& key) const{
         uint32_t x = static_cast<uint32_t>(key);
 
         x = (x ^ 61) ^ (x >> 16);
@@ -110,14 +110,14 @@ void HashMap<K,V>::rehash()
     loadFactor = static_cast<float>(size) / capacity;
 }
 
-size_t Hash<char>::operator()(const char& key) const
+inline size_t Hash<char>::operator()(const char& key) const
     {
         uint32_t x = static_cast<unsigned char>(key);
         x *= 2654435761u;
         return static_cast<size_t>(x);
     }
 
-size_t Hash<float>::operator()(const float& key) const
+inline size_t Hash<float>::operator()(const float& key) const
 {
     uint32_t bits;
     std::memcpy(&bits, &key, sizeof(float));
@@ -131,7 +131,7 @@ size_t Hash<float>::operator()(const float& key) const
     return static_cast<size_t>(bits);
 }
 
-size_t Hash<std::string>::operator()(const std::string& key) const
+inline size_t Hash<std::string>::operator()(const std::string& key) const
 {
     uint64_t hash = 14695981039346656037ULL; // FNV offset basis
 
@@ -144,7 +144,7 @@ size_t Hash<std::string>::operator()(const std::string& key) const
     return static_cast<size_t>(hash);
 }
 template<typename K>
-size_t Hash<K>::operator()(const K& obj) const{
+inline size_t Hash<K>::operator()(const K& obj) const{
     static_assert(
         HasCreateHash<K>::value,
         "User-defined type must implement createHash()"

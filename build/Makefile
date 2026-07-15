@@ -488,6 +488,150 @@ tests/dynamicArrayUserDefinedTest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/dynamicArrayUserDefinedTest.cpp.s
 .PHONY : tests/dynamicArrayUserDefinedTest.cpp.s
 
+tests/hashmapExistsTest.obj: tests/hashmapExistsTest.cpp.obj
+.PHONY : tests/hashmapExistsTest.obj
+
+# target to build an object file
+tests/hashmapExistsTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/hashmapExistsTest.cpp.obj
+.PHONY : tests/hashmapExistsTest.cpp.obj
+
+tests/hashmapExistsTest.i: tests/hashmapExistsTest.cpp.i
+.PHONY : tests/hashmapExistsTest.i
+
+# target to preprocess a source file
+tests/hashmapExistsTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/hashmapExistsTest.cpp.i
+.PHONY : tests/hashmapExistsTest.cpp.i
+
+tests/hashmapExistsTest.s: tests/hashmapExistsTest.cpp.s
+.PHONY : tests/hashmapExistsTest.s
+
+# target to generate assembly for a file
+tests/hashmapExistsTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/hashmapExistsTest.cpp.s
+.PHONY : tests/hashmapExistsTest.cpp.s
+
+tests/hashmapGetMethodsTest.obj: tests/hashmapGetMethodsTest.cpp.obj
+.PHONY : tests/hashmapGetMethodsTest.obj
+
+# target to build an object file
+tests/hashmapGetMethodsTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/hashmapGetMethodsTest.cpp.obj
+.PHONY : tests/hashmapGetMethodsTest.cpp.obj
+
+tests/hashmapGetMethodsTest.i: tests/hashmapGetMethodsTest.cpp.i
+.PHONY : tests/hashmapGetMethodsTest.i
+
+# target to preprocess a source file
+tests/hashmapGetMethodsTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/hashmapGetMethodsTest.cpp.i
+.PHONY : tests/hashmapGetMethodsTest.cpp.i
+
+tests/hashmapGetMethodsTest.s: tests/hashmapGetMethodsTest.cpp.s
+.PHONY : tests/hashmapGetMethodsTest.s
+
+# target to generate assembly for a file
+tests/hashmapGetMethodsTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/hashmapGetMethodsTest.cpp.s
+.PHONY : tests/hashmapGetMethodsTest.cpp.s
+
+tests/hashmapGetTest.obj: tests/hashmapGetTest.cpp.obj
+.PHONY : tests/hashmapGetTest.obj
+
+# target to build an object file
+tests/hashmapGetTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/hashmapGetTest.cpp.obj
+.PHONY : tests/hashmapGetTest.cpp.obj
+
+tests/hashmapGetTest.i: tests/hashmapGetTest.cpp.i
+.PHONY : tests/hashmapGetTest.i
+
+# target to preprocess a source file
+tests/hashmapGetTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/hashmapGetTest.cpp.i
+.PHONY : tests/hashmapGetTest.cpp.i
+
+tests/hashmapGetTest.s: tests/hashmapGetTest.cpp.s
+.PHONY : tests/hashmapGetTest.s
+
+# target to generate assembly for a file
+tests/hashmapGetTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/hashmapGetTest.cpp.s
+.PHONY : tests/hashmapGetTest.cpp.s
+
+tests/hashmapRemoveTest.obj: tests/hashmapRemoveTest.cpp.obj
+.PHONY : tests/hashmapRemoveTest.obj
+
+# target to build an object file
+tests/hashmapRemoveTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/hashmapRemoveTest.cpp.obj
+.PHONY : tests/hashmapRemoveTest.cpp.obj
+
+tests/hashmapRemoveTest.i: tests/hashmapRemoveTest.cpp.i
+.PHONY : tests/hashmapRemoveTest.i
+
+# target to preprocess a source file
+tests/hashmapRemoveTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/hashmapRemoveTest.cpp.i
+.PHONY : tests/hashmapRemoveTest.cpp.i
+
+tests/hashmapRemoveTest.s: tests/hashmapRemoveTest.cpp.s
+.PHONY : tests/hashmapRemoveTest.s
+
+# target to generate assembly for a file
+tests/hashmapRemoveTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/hashmapRemoveTest.cpp.s
+.PHONY : tests/hashmapRemoveTest.cpp.s
+
+tests/hashmapSetTest.obj: tests/hashmapSetTest.cpp.obj
+.PHONY : tests/hashmapSetTest.obj
+
+# target to build an object file
+tests/hashmapSetTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/hashmapSetTest.cpp.obj
+.PHONY : tests/hashmapSetTest.cpp.obj
+
+tests/hashmapSetTest.i: tests/hashmapSetTest.cpp.i
+.PHONY : tests/hashmapSetTest.i
+
+# target to preprocess a source file
+tests/hashmapSetTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/hashmapSetTest.cpp.i
+.PHONY : tests/hashmapSetTest.cpp.i
+
+tests/hashmapSetTest.s: tests/hashmapSetTest.cpp.s
+.PHONY : tests/hashmapSetTest.s
+
+# target to generate assembly for a file
+tests/hashmapSetTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/hashmapSetTest.cpp.s
+.PHONY : tests/hashmapSetTest.cpp.s
+
+tests/hashmapUserDefinedTest.obj: tests/hashmapUserDefinedTest.cpp.obj
+.PHONY : tests/hashmapUserDefinedTest.obj
+
+# target to build an object file
+tests/hashmapUserDefinedTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/hashmapUserDefinedTest.cpp.obj
+.PHONY : tests/hashmapUserDefinedTest.cpp.obj
+
+tests/hashmapUserDefinedTest.i: tests/hashmapUserDefinedTest.cpp.i
+.PHONY : tests/hashmapUserDefinedTest.i
+
+# target to preprocess a source file
+tests/hashmapUserDefinedTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/hashmapUserDefinedTest.cpp.i
+.PHONY : tests/hashmapUserDefinedTest.cpp.i
+
+tests/hashmapUserDefinedTest.s: tests/hashmapUserDefinedTest.cpp.s
+.PHONY : tests/hashmapUserDefinedTest.s
+
+# target to generate assembly for a file
+tests/hashmapUserDefinedTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/tests/hashmapUserDefinedTest.cpp.s
+.PHONY : tests/hashmapUserDefinedTest.cpp.s
+
 tests/linkedListConstructorTest.obj: tests/linkedListConstructorTest.cpp.obj
 .PHONY : tests/linkedListConstructorTest.obj
 
@@ -849,6 +993,24 @@ help:
 	@echo ... tests/dynamicArrayUserDefinedTest.obj
 	@echo ... tests/dynamicArrayUserDefinedTest.i
 	@echo ... tests/dynamicArrayUserDefinedTest.s
+	@echo ... tests/hashmapExistsTest.obj
+	@echo ... tests/hashmapExistsTest.i
+	@echo ... tests/hashmapExistsTest.s
+	@echo ... tests/hashmapGetMethodsTest.obj
+	@echo ... tests/hashmapGetMethodsTest.i
+	@echo ... tests/hashmapGetMethodsTest.s
+	@echo ... tests/hashmapGetTest.obj
+	@echo ... tests/hashmapGetTest.i
+	@echo ... tests/hashmapGetTest.s
+	@echo ... tests/hashmapRemoveTest.obj
+	@echo ... tests/hashmapRemoveTest.i
+	@echo ... tests/hashmapRemoveTest.s
+	@echo ... tests/hashmapSetTest.obj
+	@echo ... tests/hashmapSetTest.i
+	@echo ... tests/hashmapSetTest.s
+	@echo ... tests/hashmapUserDefinedTest.obj
+	@echo ... tests/hashmapUserDefinedTest.i
+	@echo ... tests/hashmapUserDefinedTest.s
 	@echo ... tests/linkedListConstructorTest.obj
 	@echo ... tests/linkedListConstructorTest.i
 	@echo ... tests/linkedListConstructorTest.s
