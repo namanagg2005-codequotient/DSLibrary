@@ -22,7 +22,7 @@ private:
     void handleClear();
 
     
-    void printHelp() const;
+
 };
 
 #include "redisLite.cpp"
