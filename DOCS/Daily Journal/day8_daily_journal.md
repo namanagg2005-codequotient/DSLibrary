@@ -89,7 +89,14 @@ The redesign included:
 * `src/HashNode.h`
 * `src/redisLite.cpp`
 * `src/redisLite.h`
-* `main.cpp`
+* `tests/hashMapSetTest.cpp`
+* `tests/hashMapGetTest.cpp`
+* `tests/hashMapRemoveTest.cpp`
+* `tests/hashMapExistsTest.cpp`
+* `tests/hashMapSizeTest.cpp`
+* `tests/hashMapUserDefinedTest.cpp`
+
+
 
 **Major Sections Updated:**
 

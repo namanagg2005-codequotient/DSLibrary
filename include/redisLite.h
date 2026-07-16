@@ -2,7 +2,7 @@
 #define REDISCLI_H
 
 #include <string>
-#include "HashMap.h"
+#include "hashMap.h"
 
 class RedisCLI
 {

@@ -1,6 +1,6 @@
 #include "redisLite.h"
 #include <string>
-#include "HashMap.h"
+#include "hashMap.h"
 #include <iostream>
 #include <sstream>
 
